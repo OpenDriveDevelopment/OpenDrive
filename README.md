@@ -23,7 +23,7 @@ Este módulo obtendra las salidas proporcionadas por el modulo de percepción pa
 ## Instalación
 Para instalar el framework, sigue estos pasos:
 1. Clona el repositorio: `git clone https://github.com/tu_usuario/opendrive-framework.git`
-2. Navega a la raiz del proyecto: `cd framework`
+2. Navega a la raiz de el proyecto: `cd framework`
 3. Instala las dependencias: `pip install -r requirements.txt`
 
 ## Uso
