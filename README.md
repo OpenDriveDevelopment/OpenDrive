@@ -1,33 +1,45 @@
+# ![Logo](https://github.com/user-attachments/assets/248fb770-2ac3-4d69-975b-3af1f2aa148a)
+
 # OpenDrive Framework
 
-## Descripción
-OpenDrive Framework es un proyecto open source diseñado para el desarrollo de sistemas de conducción autónoma. Proporciona la estructura y herramientas necesarias para crear un entorno completo de desarrollo.
+**OpenDrive Framework** is an open-source project designed to accelerate the development of autonomous driving systems.
 
+It provides a modular structure and the necessary tools to create a complete development environment for autonomous vehicles. OpenDrive Framework allows developers to work on detection, perception, and decision-making components, facilitating the creation of custom autonomous systems.
 
-## Estructura del Proyecto
-El framework se divide en tres módulos principales:
-- **Módulo de Sensores:** Captura información de la cámara y otros sensores.
-- **Módulo de Percepción:** Realiza detecciones como carriles, señalamientos y objetos.
-- **Módulo de Toma de Decisiones:** Define el comportamiento del vehículo basado en las detecciones obtenidas.
+## Objective
 
-### Módulo de Sensores
-El módulo de sensores incluye los paquetes `sensors` y `data_acquisition` los cuales son usados para la adquisision de datos, actualmente el unico sensor disponible es la camara.
+The goal of **OpenDrive Framework** is to simplify the development of autonomous driving systems by providing well-defined, ready-to-use components while maintaining the flexibility to customize or replace modules as needed. This project is designed to be accessible to developers who wish to experiment and contribute new features, bug fixes, and improvements.
 
+## Project Structure
 
-### Módulo de Percepción
-Este módulo hace uso de modelos de inteligencia artificial preentrenados donde se procesa la informacion obtenida por el módulo de sensores.
+The framework is divided into three main modules, each designed to fulfill specific functions within an autonomous system:
 
-### Módulo de Toma de Decisiones
-Este módulo obtendra las salidas proporcionadas por el modulo de percepción para procesarlas y dar información al usuario final.
+- **Sensor Module**: Captures and processes real-time data from cameras and other sensors. Currently, it supports data acquisition through cameras.
+- **Perception Module**: Uses pre-trained AI models to analyze data captured by the sensors, performing tasks such as object detection, lane recognition, and traffic sign detection.
+- **Decision-Making Module**: Based on the results provided by the perception module, this module defines the actions or warnings that the vehicle should take.
 
-## Instalación
-Para instalar el framework, sigue estos pasos:
-1. Clona el repositorio: `git clone https://github.com/tu_usuario/opendrive-framework.git`
-2. Navega a la raiz de el proyecto: `cd framework`
-3. Instala las dependencias: `pip install -r requirements.txt`
+## Principles
 
-## Uso
-Puedes utilizar el framework siguiendo estas instrucciones:
+**OpenDrive Framework** is guided by the following principles, aimed at maintaining a modular, flexible, and developer-friendly system:
+
+- **Modularity**: Each module has well-defined functions and APIs, allowing them to work together seamlessly. Developers can contribute to or modify modules without affecting the rest of the system.
+- **Interchangeable Architecture**: Although OpenDrive Framework provides the necessary components to build a complete autonomous system, its modular architecture allows developers to replace components with their own implementations.
+- **Security without compromising usability**: The framework offers secure default settings, ensuring system integrity without making it difficult to use.
+- **Developer-focused**: The APIs are designed to be functional and useful for building powerful tools. The documentation and user experience are aimed at developers, making integration and extension easier.
+
+## Contributions
+
+OpenDrive Framework is an open project, welcoming contributions from the community. Whether you want to add new features, improve performance, or fix bugs, all contributions are welcome. To get started, check out the [Contribution Guide](CONTRIBUTING.md) and follow the established development standards.
+
+## Installation
+
+To install the framework, follow these steps:
+1. Clone the repository: `git clone https://github.com/your_username/opendrive-framework.git`
+2. Navigate to the project root: `cd framework`
+3. Install the dependencies: `pip install -r requirements.txt`
+
+## Usage
+
+You can use the framework by following these instructions:
 ```python
 from opendrive import OpenDriveFramework
-
