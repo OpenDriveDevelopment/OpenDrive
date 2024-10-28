@@ -11,10 +11,10 @@ def main():
     )
 
     # Define a topic with chat messages in JSON format
-    messages_topic = app.topic(name="Sensor_Data_1", value_deserializer="bytes")
+    messages_topic = app.topic(name="sensor_camera_0", value_deserializer="bytes")
 
     with app.get_consumer() as consumer:
-        consumer.subscribe(["Sensor_Data_1"])
+        consumer.subscribe(["sensor_camera_0"])
         
         while True:
             msg = consumer.poll(1)

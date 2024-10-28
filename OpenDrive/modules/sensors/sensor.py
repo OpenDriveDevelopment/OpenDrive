@@ -23,4 +23,11 @@ class Sensor(ABC):
     def disable_sensor(self):
         """Disables the sensor."""
         pass
-    
+
+    def start_data_streaming(self):
+        """Start straming the sensor data"""
+        pass
+
+    def stop_data_streaming(self):
+        """Stop straming the sensor data"""
+        pass
