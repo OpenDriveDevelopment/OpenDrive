@@ -3,7 +3,7 @@
 ####################################
 
 # import cv2
-# from OpenDrive.modules.sensors.camera import Camera
+# from OpenDrive.modules.sensors_prep.sensors.camera import Camera
 # from OpenDrive.modules.perception.trained_models.lane_detection import get_lane_detection
 
 # cam1 = Camera(0,1)
@@ -29,7 +29,7 @@
 ####################################
 
 import cv2
-from OpenDrive.modules.sensors.camera import Camera
+from OpenDrive.modules.sensors_prep.sensors.camera import Camera
 from OpenDrive.modules.perception.trained_models.traffic_sign_detection import get_traffic_sign_detection
 
 
@@ -55,7 +55,7 @@ cv2.destroyAllWindows()
 
 
 # import cv2
-# from OpenDrive.modules.sensors.camera import Camera
+# from OpenDrive.modules.sensors_prep.sensors.camera import Camera
 # from OpenDrive.modules.perception.trained_models.objects_detection import get_object_detection
 
 # cam1 = Camera(0,1)

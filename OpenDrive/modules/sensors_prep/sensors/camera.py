@@ -1,7 +1,7 @@
 import cv2
 import asyncio
 from matplotlib import pyplot as plt
-from OpenDrive.modules.sensors.sensor import Sensor
+from OpenDrive.modules.sensors_prep.sensors.sensor import Sensor
 from OpenDrive.modules.stream_processing.producer import DataProducer
 
 class Camera(Sensor):
