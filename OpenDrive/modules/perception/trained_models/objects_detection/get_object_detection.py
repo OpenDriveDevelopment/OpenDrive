@@ -12,7 +12,7 @@ model = YOLO(model_path)
 
 def real_time_prediction(image):
         # Realizar la predicción en el frame capturado
-        results = model(image)
+        results = model(image, verbose = False)
         
         # Dibujar las predicciones en el frame
         for result in results:

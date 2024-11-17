@@ -55,7 +55,7 @@ class Camera(Sensor):
             else:
                 print("Camera not open")
 
-            await asyncio.sleep(3)
+            await asyncio.sleep(0.1)
 
         print("Data streaming stopped")
 
