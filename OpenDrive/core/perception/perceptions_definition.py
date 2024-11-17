@@ -11,11 +11,8 @@ async def main():
     pipeline1 = SensorToModelPipeline(input_sensor="sensor_camera_1", 
                                     vision_models=["signals", "lane"],
                                     output_decision="output_1")
-    
-    print("CODE WAS EXECUTED")
 
     await control_perception_streaming([pipeline0,pipeline1])
-
 
 if __name__ == "__main__":
     try:

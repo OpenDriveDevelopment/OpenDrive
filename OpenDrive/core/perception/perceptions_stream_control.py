@@ -9,7 +9,7 @@ def execute_operation(message, pipeline, app):
     
     processed_message = f"Processed data from {pipeline.input_sensor}"
     serialized_message = processed_message.encode('utf-8')
- 
+    
     messages_topic = app.topic(name="output_topic_name", value_serializer="bytes")
     
     with app.get_producer() as producer:
@@ -18,7 +18,7 @@ def execute_operation(message, pipeline, app):
             key = "1",
             value = serialized_message,
         )
-        
+    
 
 async def control_perception_streaming(pipelines):
     
@@ -37,7 +37,6 @@ async def control_perception_streaming(pipelines):
     
     for pipeline in pipelines:
         input_topic = app.topic(name=pipeline.input_sensor, value_deserializer="bytes")
-        output_topic = app.topic(name="output_topic_name", value_serializer="bytes")
         sdf = app.dataframe(input_topic)
         sdf = sdf.update(partial(execute_operation, pipeline=pipeline, app=app)) ## Es necesario utilizar el partial para que los parametros de la funcion sean pasados correctamente
         
