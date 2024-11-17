@@ -5,9 +5,9 @@ from OpenDrive.modules.sensors_prep.sensors.sensor import Sensor
 from OpenDrive.modules.stream_processing.producer import DataProducer
 
 class Camera(Sensor):
-    def __init__(self, port, resolution):
+    def __init__(self, port, sensing_speed: int = 0.1):
         self.port = port
-        self.resolution = resolution
+        self.sensing_speed = sensing_speed
         self.streaming = False
         
     def enable_sensor(self):
@@ -55,7 +55,7 @@ class Camera(Sensor):
             else:
                 print("Camera not open")
 
-            await asyncio.sleep(0.1)
+            await asyncio.sleep(self.sensing_speed)
 
         print("Data streaming stopped")
 
