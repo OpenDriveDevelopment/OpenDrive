@@ -5,11 +5,11 @@ from OpenDrive.core.perception.perceptions_stream_control import control_percept
 
 async def main():
     pipeline0 = SensorToModelPipeline(input_sensor="sensor_camera_0", 
-                                    vision_models=["signals", "objects", "lane"],
+                                    vision_models=["signals"],
                                     output_decision="output_0")
 
     pipeline1 = SensorToModelPipeline(input_sensor="sensor_camera_1", 
-                                    vision_models=["signals", "lane"],
+                                    vision_models=["signals"],
                                     output_decision="output_1")
 
     await control_perception_streaming([pipeline0,pipeline1])
