@@ -3,10 +3,10 @@ from OpenDrive.modules.sensors_prep.sensors.camera import Camera
 from OpenDrive.core.sensors_prep.sensors_stream_control import start_sensors_streaming
 
 async def main():
-    cam1 = Camera(1, 1)
+    cam1 = Camera(1, .3)
     cam1.enable_sensor()
     
-    cam2 = Camera(0, 1)
+    cam2 = Camera(0, .3)
     cam2.enable_sensor()
     
     await start_sensors_streaming([cam2, cam1])
