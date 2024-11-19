@@ -6,6 +6,10 @@ import cv2
 import numpy as np
 import time
 
+import random
+import string
+
+
 from OpenDrive.modules.perception.trained_models.lane_detection.get_lane_detection import get_lane_detection
 from OpenDrive.modules.perception.trained_models.objects_detection.get_object_detection import get_obj_detection
 from OpenDrive.modules.perception.trained_models.traffic_sign_detection.get_traffic_sign_detection import get_sign_detection
@@ -82,10 +86,19 @@ async def control_perception_streaming(pipelines):
         print("No perception pipelines have been provided for streaming")
         return
     
+    
+    longitud = 10
+
+# Caracteres a utilizar
+    caracteres = string.ascii_letters + string.digits  # Letras y números
+
+    # Generar el string aleatorio
+    string_random = ''.join(random.choices(caracteres, k=longitud))
+    
     app = Application(
         broker_address="localhost:9092",
         auto_offset_reset="latest",
-        consumer_group="unique_consumer_group_nam3"
+        consumer_group= string_random
     )
     
     for pipeline in pipelines:
