@@ -18,7 +18,12 @@ function_mapping = {
 }
 
 
+# Contador global para los IDs de los frames
+frame_counter = 0
+
 def execute_operation(message, pipeline, app):
+    global frame_counter  # Usamos una variable global para el ID del frame
+
     print("PIPELINE COMING " + pipeline.input_sensor)
     
     functions_to_execute = pipeline.vision_models
@@ -29,28 +34,26 @@ def execute_operation(message, pipeline, app):
     if frame is None:
         print("Couldn't get frame")
         return
+    
+    # Incrementar el contador de frames
+    frame_counter += 1
+    frame_id = frame_counter
 
     for func_name in functions_to_execute:
-        
+
         if func_name in function_mapping:
-            
             start_time = time.perf_counter()
             
             result = function_mapping[func_name](frame)
             
             end_time = time.perf_counter()
-            
-            
             elapsed_time = end_time - start_time
             print(f"El código tardó {elapsed_time:.4f} segundos en ejecutarse.")
-            
-            # print(f"Result type: {type(result)}")
-            # print(f"Result content: {result}")
 
+            # Serializar el resultado
             if isinstance(result, dict):
                 serialized_result = json.dumps(result)
             elif isinstance(result, list):
-                # Serializar la lista completa como JSON
                 serialized_result = json.dumps(result)
             else:
                 try:
@@ -59,18 +62,23 @@ def execute_operation(message, pipeline, app):
                     print(f"Unexpected result type: {type(result)}")
                     return
 
-      
-            # print("Serialized Result:", serialized_result)
-            
+            # Crear el mensaje con el ID del frame
+            message_with_id = {
+                "id": pipeline.input_sensor + "_" + func_name + "_" + str(frame_id),
+                "data": serialized_result
+            }
+
+            serialized_message = json.dumps(message_with_id)
+
+            # Enviar el mensaje al topic
             messages_topic = app.topic(name="output_topic_name", value_serializer="bytes")
             
             with app.get_producer() as producer:
                 producer.produce(
-                    topic = messages_topic.name,
-                    key = "1",
-                    value = serialized_result.encode('utf-8')
+                    topic=messages_topic.name,
+                    key=str(frame_id),  # Usar el frame_id como clave para Kafka
+                    value=serialized_message.encode('utf-8')
                 )
-                  
         else:
             print(f"Function for '{func_name}' not defined.")
     
