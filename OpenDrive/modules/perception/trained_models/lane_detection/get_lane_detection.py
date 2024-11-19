@@ -20,8 +20,8 @@ def get_lane_detection_image(image, width, height):
     image = cv2.resize(image, (IMG_SIZE, IMG_SIZE))
     """Get the binary mask"""
 
-    pred_mask = model.predict(np.expand_dims(image, axis = 0)) 
-    mask = np.round_(pred_mask[0])
+    pred_mask = model.predict(np.expand_dims(image, axis = 0),verbose=False) 
+    mask = np.round(pred_mask[0])
     
     """Convert to mask image"""
 
@@ -33,7 +33,7 @@ def get_lane_detection_image(image, width, height):
 
     final_image = weighted_img(mask, image, α = 1, β = 0.5, γ = 0.1)
     final_image = cv2.resize(final_image, (width, height))
-
+    
     return final_image
 
 def get_lane_detection(image):
