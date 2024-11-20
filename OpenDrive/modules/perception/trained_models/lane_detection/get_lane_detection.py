@@ -15,7 +15,7 @@ def weighted_img(img, initial_img, α=1., β=0.5, γ=0.):
     return cv2.addWeighted(initial_img, α, img, β, γ)
 
 """ Function to process an individual image """
-def process_image(image, width, height):
+def get_lane_detection_image(image, width, height):
     """Preprocess image"""
     image = cv2.resize(image, (IMG_SIZE, IMG_SIZE))
     """Get the binary mask"""
@@ -35,3 +35,18 @@ def process_image(image, width, height):
     final_image = cv2.resize(final_image, (width, height))
 
     return final_image
+
+def get_lane_detection(image):
+    # Preprocesar la imagen
+    image = cv2.resize(image, (IMG_SIZE, IMG_SIZE))
+    # Obtener la máscara binaria predicha por el modelo
+    pred_mask = model.predict(np.expand_dims(image, axis=0))
+    # Redondear la máscara predicha para obtener valores binarios (0 o 1)
+    mask = np.round_(pred_mask[0])
+    # Convertir la máscara a una lista de listas para compatibilidad con JSON
+    mask_list = mask.tolist()
+    # Empaquetar la máscara en un diccionario
+    metadata = {
+        "lane_mask": mask_list
+    }
+    return metadata
