@@ -24,11 +24,7 @@ def get_obj_detection_image(image):
             class_id = int(box.cls[0])  # ID de la clase predicha
             score = box.conf[0]  # Confianza de la predicción
             
-<<<<<<< Updated upstream
             if model.names[class_id] in objects_detected and score > 0.55:
-=======
-            if model.names[class_id] in objects_detected:
->>>>>>> Stashed changes
                 # Dibujar la caja en el frame
                 cv2.rectangle(image, (x1, y1), (x2, y2), (0, 255, 0), 2)
                 label = f"{model.names[class_id]}: {score:.2f}"
@@ -50,10 +46,7 @@ def get_obj_detection(image):
             class_id = int(box.cls[0].item())  # Convertir a entero
             score = float(box.conf[0].item())  # Convertir a flotante
             class_name = model.names[class_id]
-<<<<<<< Updated upstream
           
-=======
->>>>>>> Stashed changes
             
             if model.names[class_id] in objects_detected:
             # Crear un diccionario con los datos de la detección

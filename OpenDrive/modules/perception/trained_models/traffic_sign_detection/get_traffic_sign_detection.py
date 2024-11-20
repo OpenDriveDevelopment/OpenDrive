@@ -12,11 +12,7 @@ model = YOLO(model_path)
 
 def get_sign_detection_image(image):
     # Realizar la predicción en el frame capturado
-<<<<<<< Updated upstream
     results = model(image,verbose=False)
-=======
-    results = model(image)
->>>>>>> Stashed changes
     
     # Dibujar las predicciones en el frame
     for result in results:
