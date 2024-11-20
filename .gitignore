@@ -1,2 +1,19 @@
 __pycache__/
+<<<<<<< Updated upstream
 *.mp4
+=======
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+
+# Ignorar videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+>>>>>>> Stashed changes

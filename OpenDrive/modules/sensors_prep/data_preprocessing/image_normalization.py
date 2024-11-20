@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-def resize_image_CV(frame, output_size=(556, 556)):
+def resize_image_CV(frame, output_size=(244, 244)):
     """
     Redimensiona un frame (imagen de OpenCV) a un tamaño específico manteniendo la proporción.
     
@@ -94,6 +94,7 @@ def dynamic_normalization(frame, alpha=1.2, beta=20, saturation_scale=1.2, thres
         # Imagen ya está en buen estado, no ajustar
         return frame
 
+<<<<<<< Updated upstream
 # Ejemplo de uso 
 #Reading a video from file
 cap = cv2.VideoCapture('video2.mp4') 
@@ -119,6 +120,33 @@ cap.release()
 
 # Destroy all windows
 cv2.destroyAllWindows()
+=======
+## Ejemplo de uso 
+#Reading a video from file
+# cap = cv2.VideoCapture('video2.mp4') 
+
+# while(cap.isOpened()):
+
+#     # capture frame-by-frame
+#     ret, frame = cap.read()
+#     if ret == True:
+
+#         # Display a frame
+        
+#         frame_2 = scale_pixel_values(frame)
+#         cv2.imshow('Frame', frame_2)
+
+#         if cv2.waitKey(25) & 0xFF == ord('q'):
+#             break
+#     else:
+#         break
+
+# # Release the capture object
+# cap.release()
+
+# # Destroy all windows
+# cv2.destroyAllWindows()
+>>>>>>> Stashed changes
 
 ##############
 

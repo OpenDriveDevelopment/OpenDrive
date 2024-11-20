@@ -1,175 +1,126 @@
-import asyncio
+import multiprocessing
 import json
-from functools import partial
+import os
 from quixstreams import Application
 import cv2
 import numpy as np
-import time
+import string
+import random
 
 from OpenDrive.modules.perception.trained_models.lane_detection.get_lane_detection import get_lane_detection
 from OpenDrive.modules.perception.trained_models.objects_detection.get_object_detection import get_obj_detection
 from OpenDrive.modules.perception.trained_models.traffic_sign_detection.get_traffic_sign_detection import get_sign_detection
 
+# Deshabilitar la configuración de señales en Quix
+os.environ["QUIXSTREAMS_DISABLE_SIGNAL_HANDLERS"] = "1"
 
+# Mapeo de funciones de modelos
 function_mapping = {
     "signals": get_sign_detection,
     "objects": get_obj_detection,
     "lane": get_lane_detection,
 }
 
+# Contador global para los IDs de los frames
+frame_counter = 0
 
 def execute_operation(message, pipeline, app):
-    print("PIPELINE COMING " + pipeline.input_sensor)
     
-    functions_to_execute = pipeline.vision_models
-    
+    global frame_counter
+    # Convertir el mensaje a un frame
     np_array = np.frombuffer(message, dtype=np.uint8)
     frame = cv2.imdecode(np_array, cv2.IMREAD_COLOR)
-    
     if frame is None:
-        print("Couldn't get frame")
+        print(f"[ERROR] Couldn't decode frame for sensor {pipeline.input_sensor}")
+        return
+    
+    # Incrementar el contador de frames
+    frame_counter += 1
+    frame_id = frame_counter
+    
+    # Validar que haya funciones asignadas en el pipeline
+    if not pipeline.vision_models:
+        print(f"[WARNING] No functions assigned to pipeline: {pipeline.input_sensor}")
         return
 
-    for func_name in functions_to_execute:
+    # Ejecutar las funciones asignadas en el pipeline
+    for func_name in pipeline.vision_models:
         
-        if func_name in function_mapping:
-            
-            start_time = time.perf_counter()
-            
+        if func_name not in function_mapping:
+            print(f"[WARNING] Function '{func_name}' not available for pipeline {pipeline.input_sensor}")
+            continue
+        
+        try:
+            # Ejecutar la funcion
             result = function_mapping[func_name](frame)
             
-            end_time = time.perf_counter()
-            
-            
-            elapsed_time = end_time - start_time
-            print(f"El código tardó {elapsed_time:.4f} segundos en ejecutarse.")
-            
-            # print(f"Result type: {type(result)}")
-            # print(f"Result content: {result}")
+            # Preparar y serializar el resultado
+            result_payload = {
+                "id": pipeline.input_sensor + "_" + func_name + "_" + str(frame_id),
+                "input_sensor": pipeline.input_sensor,
+                "data": result if isinstance(result, (dict, list)) else str(result),
+            }
+            serialized_result = json.dumps(result_payload)
 
-            if isinstance(result, dict):
-                serialized_result = json.dumps(result)
-            elif isinstance(result, list):
-                # Serializar la lista completa como JSON
-                serialized_result = json.dumps(result)
-            else:
-                try:
-                    serialized_result = result.tojson()
-                except AttributeError:
-                    print(f"Unexpected result type: {type(result)}")
-                    return
+            # Enviar el resultado al topic de salida
+            try:
+                messages_topic = app.topic(name=pipeline.output_decision, value_serializer="bytes")
+                with app.get_producer() as producer:
+                    producer.produce(
+                        topic = messages_topic.name,
+                        key = str(frame_id),
+                        value = serialized_result.encode('utf-8')
+                    )
+                print(f"[INFO] Result for {func_name} sent to topic: {pipeline.output_decision}")
+            except Exception as e:
+                print(f"[ERROR] Failed to send result to topic {pipeline.output_decision}: {e}")
+        except Exception as e:
+            print(f"[ERROR] Failed to process function {func_name} for sensor {pipeline.input_sensor}: {e}")
 
-      
-            # print("Serialized Result:", serialized_result)
-            
-            messages_topic = app.topic(name="output_topic_name", value_serializer="bytes")
-            
-            with app.get_producer() as producer:
-                producer.produce(
-                    topic = messages_topic.name,
-                    key = "1",
-                    value = serialized_result.encode('utf-8')
-                )
-                  
-        else:
-            print(f"Function for '{func_name}' not defined.")
-    
-    
-async def control_perception_streaming(pipelines):
-    
-    if not pipelines:
-        print("No perception pipelines have been provided for streaming")
-        return
-    
+def run_app(pipeline):
+    """
+    Configura y ejecuta la aplicación Quix Streams en un proceso independiente.
+    """
+    # Crear una instancia de Application con un consumer_group único
     app = Application(
         broker_address="localhost:9092",
         auto_offset_reset="latest",
-        consumer_group="unique_consumer_group_nam3"
+        consumer_group=_generate_random_group_id()  # Generar un grupo único
     )
     
-    for pipeline in pipelines:
-        input_topic = app.topic(name=pipeline.input_sensor, value_deserializer="bytes")
-        sdf = app.dataframe(input_topic)
-        sdf = sdf.update(partial(execute_operation, pipeline=pipeline, app=app)) ## Es necesario utilizar el partial para que los parametros de la funcion sean pasados correctamente
-        
+    # Configurar el topic de entrada
+    input_topic = app.topic(name=pipeline.input_sensor, value_deserializer="bytes")
+    sdf = app.dataframe(input_topic)
+
+    # Configurar la función de procesamiento
+    def process_message(message):
+        execute_operation(message, pipeline, app)
+
+    sdf = sdf.update(process_message)
+    print(f"[INFO] Consumer running for pipeline: {pipeline.input_sensor} consuming {pipeline.vision_models} model")
+    
+    # Ejecutar la aplicación
     app.run()
-   
-   
-   
-        
-# import asyncio
-# from functools import partial
-# from quixstreams import Application
-# import cv2
-# import numpy as np
-# from OpenDrive.modules.perception.trained_models.lane_detection.get_lane_detection import get_lane_detection
-# from OpenDrive.modules.perception.trained_models.objects_detection.get_object_detection import get_obj_detection
-# from OpenDrive.modules.perception.trained_models.traffic_sign_detection.get_traffic_sign_detection import get_sign_detection
 
-# # Mapeo de funciones, asegurándonos de que puedan ser asíncronas
-# function_mapping = {
-#     "signals": get_sign_detection,
-#     "objects": get_obj_detection,
-#     "lane": get_lane_detection,
-# }
+def control_perception_streaming(pipelines):
+    """
+    Crea procesos independientes para cada pipeline.
+    """
+    processes = []
 
+    for pipeline in pipelines:
+        # Crear un nuevo proceso para cada pipeline
+        process = multiprocessing.Process(target=run_app, args=(pipeline,))
+        process.start()
+        processes.append(process)
 
-# def execute_operation_sync(message, pipeline, app):
-#     # Ejecutar la corutina en el event loop actual
-#     asyncio.run(execute_operation(message, pipeline, app))
+    # Esperar a que los procesos terminen (normalmente no lo harán porque `app.run()` es bloqueante)
+    for process in processes:
+        process.join()
 
-
-# async def execute_operation(message, pipeline, app):
-#     print("PIPELINE COMING " + pipeline.input_sensor)
-    
-#     functions_to_execute = pipeline.vision_models
-    
-#     # Decodificar el frame del mensaje
-#     np_array = np.frombuffer(message, dtype=np.uint8)
-#     frame = cv2.imdecode(np_array, cv2.IMREAD_COLOR)
-    
-#     if frame is None:
-#         print("Couldn't get frame")
-#         return
-
-#     # Ejecutar funciones de manera asíncrona
-#     async def process_function(func_name):
-#         if func_name in function_mapping:
-#             result = function_mapping[func_name](frame)
-#             print(f"Result from {func_name}: {result}")
-            
-#             # Serializar y enviar el resultado al topic de salida
-#             serialized_result = result.encode('utf-8')
-#             messages_topic = app.topic(name="output_topic_name", value_serializer="bytes")
-#             with app.get_producer() as producer:
-#                 producer.produce(
-#                     topic=messages_topic.name,
-#                     key="1",
-#                     value=serialized_result,
-#                 )
-#         else:
-#             print(f"Function for '{func_name}' not defined.")
-
-#     # Ejecutar todas las funciones en paralelo
-#     await asyncio.gather(*(process_function(func_name) for func_name in functions_to_execute))
-
-
-# async def control_perception_streaming(pipelines):
-#     if not pipelines:
-#         print("No perception pipelines have been provided for streaming")
-#         return
-    
-#     app = Application(
-#         broker_address="localhost:9092",
-#         auto_offset_reset="latest",
-#         consumer_group="unique_consumer_group_nam3"
-#     )
-    
-#     for pipeline in pipelines:
-#         print(pipeline.input_sensor)
-#         input_topic = app.topic(name=pipeline.input_sensor, value_deserializer="bytes")
-#         sdf = app.dataframe(input_topic)
-#         sdf = sdf.update(partial(execute_operation_sync, pipeline=pipeline, app=app))
-
-        
-#     app.run()
+def _generate_random_group_id(length=10):
+    """
+    Genera un identificador único para el grupo de consumidores.
+    """
+    chars = string.ascii_letters + string.digits
+    return ''.join(random.choices(chars, k=length))

@@ -4,15 +4,27 @@ from OpenDrive.core.perception.perceptions_stream_control import control_percept
 
 
 async def main():
-    pipeline0 = SensorToModelPipeline(input_sensor="sensor_camera_0", 
-                                    vision_models=["signals"],
-                                    output_decision="output_0")
-
-    pipeline1 = SensorToModelPipeline(input_sensor="sensor_camera_1", 
-                                    vision_models=["signals"],
-                                    output_decision="output_1")
-
-    await control_perception_streaming([pipeline0,pipeline1])
+    # Definir múltiples pipelines con diferentes funciones
+    pipelines = [
+        SensorToModelPipeline(
+            input_sensor="sensor_camera_0", 
+            vision_models=["objects"],
+            output_decision="output_topic_objects"
+        ),
+        SensorToModelPipeline(
+            input_sensor="sensor_camera_0", 
+            vision_models=["signals"],
+            output_decision="output_topic_objects"
+        ),
+        SensorToModelPipeline(
+            input_sensor="sensor_camera_1", 
+            vision_models=["objects"],
+            output_decision="output_topic_objects"
+        )
+    ]
+    
+    # Ejecutar todos los pipelines de manera concurrente
+    await control_perception_streaming(pipelines)
 
 if __name__ == "__main__":
     try:
