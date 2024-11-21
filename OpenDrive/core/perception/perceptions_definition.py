@@ -17,6 +17,11 @@ async def main():
             output_decision="output_topic_objects"
         ),
         SensorToModelPipeline(
+            input_sensor="sensor_camera_0", 
+            vision_models=["lane"],
+            output_decision="output_topic_objects"
+        ),
+        SensorToModelPipeline(
             input_sensor="sensor_camera_1", 
             vision_models=["objects"],
             output_decision="output_topic_objects"

@@ -64,7 +64,7 @@ def execute_operation(message, pipeline, app):
             
             # Preparar y serializar el resultado
             result_payload = {
-                "id": pipeline.input_sensor + "_" + func_name + "_" + str(frame_id),
+                "id": pipeline.input_sensor + "_" + func_name,
                 "input_sensor": pipeline.input_sensor,
                 "data": result if isinstance(result, (dict, list)) else str(result),
                 "timestamp": timestamp
