@@ -1,16 +1,4 @@
 __pycache__/
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-*.mp4
-=======
-*.mp4
-*.avi
-*.mov
-*.mkv
-*.flv
-*.wmv
-=======
->>>>>>> c1d1be758040e1277a3ecaf36bcd89a28f87dfa4
 
 # Ignorar videos
 *.mp4
@@ -18,9 +6,5 @@ __pycache__/
 *.mov
 *.mkv
 *.flv
-<<<<<<< HEAD
 *.wmv
->>>>>>> Stashed changes
-=======
 *.wmv
->>>>>>> c1d1be758040e1277a3ecaf36bcd89a28f87dfa4
