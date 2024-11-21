@@ -1,20 +1,15 @@
-import asyncio
 import json
 from functools import partial
 from quixstreams import Application
-import cv2
-import numpy as np
-import time
+import traceback
 
 received_data = {}
-last_used_frame = 0
+data_by_sensor_and_model = {}
 
 def execute_operation(message, pipeline, app):
     """
     Procesa un mensaje Kafka, deserializa los datos y extrae el frame_id y la data.
     """
-
-    global last_used_frame
 
     try:
         # Deserializar el mensaje recibido
@@ -24,39 +19,47 @@ def execute_operation(message, pipeline, app):
         # Extraer frame_id y data
         frame_id = message_json.get("id")
         data = message_json.get("data")
-
-        # Validar frame_id
-        if not frame_id or len(frame_id.split("_")) < 5:
-            print("frame_id no tiene el formato esperado")
-            return None, None
+        timestamp = message_json.get("timestamp")
 
         # Si data es un string JSON, convertirlo en un objeto Python
-        """
 
-        if isinstance(data, str):
-            try:
-                data = json.loads(data)
-            except json.JSONDecodeError as e:
-                print(f"Error al deserializar data: {e}")
-                return None, None
-        """
+        #print(f"Frame ID: {frame_id}")
+        #print(f"Data: {data}")
 
 
-        print(f"Frame ID: {frame_id}")
-        print(f"Last f: {last_used_frame}")
-        # print(f"Data: {data}")
+        # Cosa magica
+        # Split the string by underscores
+        parts = frame_id.split("_")
+
+        model = parts[-1]
+        sensor = "_".join(parts[:-1])
+
+        print(f"\n{sensor} at time {timestamp}:")
+        if model == "signals":
+            for signal in data:
+                print(f"Detected a signal of type {signal['class_name']} with a confidence of {signal['confidence'] * 100:.2f}%")
+        elif model == "lane":
+            print("Received the matrix representing the lane")
+        elif model == "objects":
+            for obj in data:
+                print(f"Detected an object of type {obj['class_name']} with a confidence of {obj['confidence'] * 100:.2f}%")
+
+        print("\n")
+
 
         # Procesar el frame_id y actualizar received_data
-        id_parts = frame_id.split("_")
-        cadena_final = "_".join(id_parts[:4])
-
         # Asegurar la inicialización del conjunto en received_data
-        received_data.setdefault(id_parts[4], set()).add((cadena_final, data))
+        received_data.setdefault(timestamp, set()).add((frame_id, str(data)))
 
-        if len(received_data[id_parts[4]]) == 3 and last_used_frame < int(id_parts[4]):
-            last_used_frame = int(id_parts[4])
+        if len(received_data[timestamp]) == 3:
             # Lo que sea que se haga cuando se tiene la data junta al fin se pondra aqui
-            print("All data for this frame received")
+            # print(received_data[timestamp])
+            print("All data for this frame received----------")
+
+            for cosa in received_data[timestamp]:
+                data_by_sensor_and_model.setdefault(cosa[0], []).append(cosa[1])
+
+            del received_data[timestamp]
         else:
             print("Waiting for the rest of the frame data to arrive")
 
@@ -65,12 +68,13 @@ def execute_operation(message, pipeline, app):
 
     except Exception as e:
         print(f"Error al procesar el mensaje: {e}")
+        traceback.print_exc()
         return None, None
 
 
 def main():
 
-    topics = ["output_topic_name"]
+    topics = ["output_topic_objects"]
     
     if not topics:
         print("No perception pipelines have been provided for streaming")
