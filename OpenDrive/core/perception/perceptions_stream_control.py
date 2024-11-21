@@ -6,6 +6,7 @@ import cv2
 import numpy as np
 import string
 import random
+import base64
 
 from OpenDrive.modules.perception.trained_models.lane_detection.get_lane_detection import get_lane_detection
 from OpenDrive.modules.perception.trained_models.objects_detection.get_object_detection import get_obj_detection
@@ -27,8 +28,15 @@ frame_counter = 0
 def execute_operation(message, pipeline, app):
     
     global frame_counter
+    
+    deserialized_result = json.loads(message.decode('utf-8'))
+    
+    timestamp = deserialized_result['timestamp']
+    sensor_data = deserialized_result['sensor_data']
+    sensor_data = base64.b64decode(sensor_data)
+    
     # Convertir el mensaje a un frame
-    np_array = np.frombuffer(message, dtype=np.uint8)
+    np_array = np.frombuffer(sensor_data, dtype=np.uint8)
     frame = cv2.imdecode(np_array, cv2.IMREAD_COLOR)
     if frame is None:
         print(f"[ERROR] Couldn't decode frame for sensor {pipeline.input_sensor}")
@@ -59,6 +67,7 @@ def execute_operation(message, pipeline, app):
                 "id": pipeline.input_sensor + "_" + func_name + "_" + str(frame_id),
                 "input_sensor": pipeline.input_sensor,
                 "data": result if isinstance(result, (dict, list)) else str(result),
+                "timestamp": timestamp
             }
             serialized_result = json.dumps(result_payload)
 

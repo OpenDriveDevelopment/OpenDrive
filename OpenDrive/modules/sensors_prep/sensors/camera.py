@@ -3,6 +3,10 @@ import asyncio
 from matplotlib import pyplot as plt
 from OpenDrive.modules.sensors_prep.sensors.sensor import Sensor
 from OpenDrive.modules.stream_processing.producer import DataProducer
+from datetime import datetime
+import json
+import base64
+
 
 class Camera(Sensor):
     def __init__(self, port, sensing_speed: int = 0.1):
@@ -43,10 +47,21 @@ class Camera(Sensor):
                 if ret:
                     ret, buffer = cv2.imencode('.jpg', frame)
                     if ret:
+                        #serializamos el frame
                         message_value = buffer.tobytes()
+                        encoded_message  = base64.b64encode(message_value).decode('utf-8')
+                        
+                        #creamos objeto que representara la data generada
+                        result_payload = {
+                            "timestamp": int(datetime.now().timestamp() * 1e9),
+                            "sensor_data": encoded_message
+                        }
+                        
+                        serialized_result = json.dumps(result_payload).encode('utf-8')
+                        
                         # Offload send_data to a thread to avoid blocking
                         await asyncio.get_running_loop().run_in_executor(
-                            None, producer.send_data, message_value
+                            None, producer.send_data, serialized_result
                         )
                     else:
                         print("Error serializing frame")

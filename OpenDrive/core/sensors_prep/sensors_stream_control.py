@@ -13,7 +13,7 @@ async def wait_for_stop_command(stop_event):
 async def start_sensors_streaming(sensors):
     
     if not sensors:
-        print("No sensors have been provided for streaming")
+        print("[ERROR] No sensors have been provided for streaming")
         return
      
     # # Crear un evento de parada para controlar la transmisión
@@ -26,7 +26,6 @@ async def start_sensors_streaming(sensors):
         streaming_task = asyncio.create_task(sensor.start_data_streaming()) # Ejecuta start_data_streaming sin esperar
         streaming_task_list.append(streaming_task)
 
-    print("se termina el primer for")
     stop_command_task = asyncio.create_task(wait_for_stop_command(stop_event))
     # Esperar hasta que el usuario escriba "stop"
     await stop_event.wait()
