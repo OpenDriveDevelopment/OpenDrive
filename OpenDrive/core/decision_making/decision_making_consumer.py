@@ -1,13 +1,10 @@
-import asyncio
 import json
 from functools import partial
 from quixstreams import Application
-import cv2
-import numpy as np
-import time
 import traceback
 
 received_data = {}
+data_by_sensor_and_model = {}
 
 def execute_operation(message, pipeline, app):
     """
@@ -47,7 +44,11 @@ def execute_operation(message, pipeline, app):
         if len(received_data[timestamp]) == 3:
             # Lo que sea que se haga cuando se tiene la data junta al fin se pondra aqui
             # print(received_data[timestamp])
-            print("All data for this frame received--------------------")
+            print("All data for this frame received")
+
+            for cosa in received_data[timestamp]:
+                data_by_sensor_and_model.setdefault(cosa[0], []).append(cosa[1])
+
             del received_data[timestamp]
         else:
             print("Waiting for the rest of the frame data to arrive")
