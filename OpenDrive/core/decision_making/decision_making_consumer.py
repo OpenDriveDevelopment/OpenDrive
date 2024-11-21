@@ -22,20 +22,30 @@ def execute_operation(message, pipeline, app):
         timestamp = message_json.get("timestamp")
 
         # Si data es un string JSON, convertirlo en un objeto Python
-        """
 
-        if isinstance(data, str):
-            try:
-                data = json.loads(data)
-            except json.JSONDecodeError as e:
-                print(f"Error al deserializar data: {e}")
-                return None, None
+        #print(f"Frame ID: {frame_id}")
+        #print(f"Data: {data}")
 
-        """
 
-        print(f"Frame ID: {frame_id}")
-        print(f"Timestamp: {timestamp}")
-        # print(f"Data: {data}")
+        # Cosa magica
+        # Split the string by underscores
+        parts = frame_id.split("_")
+
+        model = parts[-1]
+        sensor = "_".join(parts[:-1])
+
+        print(f"\n{sensor} at time {timestamp}:")
+        if model == "signals":
+            for signal in data:
+                print(f"Detected a signal of type {signal['class_name']} with a confidence of {signal['confidence'] * 100:.2f}%")
+        elif model == "lane":
+            print("Received the matrix representing the lane")
+        elif model == "objects":
+            for obj in data:
+                print(f"Detected an object of type {obj['class_name']} with a confidence of {obj['confidence'] * 100:.2f}%")
+
+        print("\n")
+
 
         # Procesar el frame_id y actualizar received_data
         # Asegurar la inicialización del conjunto en received_data
@@ -44,7 +54,7 @@ def execute_operation(message, pipeline, app):
         if len(received_data[timestamp]) == 3:
             # Lo que sea que se haga cuando se tiene la data junta al fin se pondra aqui
             # print(received_data[timestamp])
-            print("All data for this frame received")
+            print("All data for this frame received----------")
 
             for cosa in received_data[timestamp]:
                 data_by_sensor_and_model.setdefault(cosa[0], []).append(cosa[1])
