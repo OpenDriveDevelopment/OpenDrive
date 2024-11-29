@@ -12,6 +12,9 @@ from OpenDrive.modules.perception.trained_models.lane_detection.get_lane_detecti
 from OpenDrive.modules.perception.trained_models.objects_detection.get_object_detection import get_obj_detection
 from OpenDrive.modules.perception.trained_models.traffic_sign_detection.get_traffic_sign_detection import get_sign_detection
 
+
+from OpenDrive.modules.perception.pipeline_definition.percep_pipeline import SensorToModelPipeline
+
 # Deshabilitar la configuración de señales en Quix
 os.environ["QUIXSTREAMS_DISABLE_SIGNAL_HANDLERS"] = "1"
 
@@ -47,12 +50,12 @@ def execute_operation(message, pipeline, app):
     frame_id = frame_counter
     
     # Validar que haya funciones asignadas en el pipeline
-    if not pipeline.vision_models:
+    if not pipeline.perceptions:
         print(f"[WARNING] No functions assigned to pipeline: {pipeline.input_sensor}")
         return
 
     # Ejecutar las funciones asignadas en el pipeline
-    for func_name in pipeline.vision_models:
+    for func_name in pipeline.perceptions:
         
         if func_name not in function_mapping:
             print(f"[WARNING] Function '{func_name}' not available for pipeline {pipeline.input_sensor}")
@@ -66,6 +69,9 @@ def execute_operation(message, pipeline, app):
             result_payload = {
                 "id": pipeline.input_sensor + "_" + func_name,
                 "input_sensor": pipeline.input_sensor,
+                "position_sensor": pipeline.sensor_position,
+                "type_sensor": pipeline.sensor_type,
+                "type_perception": pipeline.perceptions[0],
                 "data": result if isinstance(result, (dict, list)) else str(result),
                 "timestamp": timestamp
             }
@@ -100,13 +106,13 @@ def run_app(pipeline):
     # Configurar el topic de entrada
     input_topic = app.topic(name=pipeline.input_sensor, value_deserializer="bytes")
     sdf = app.dataframe(input_topic)
-
+    
     # Configurar la función de procesamiento
     def process_message(message):
         execute_operation(message, pipeline, app)
 
     sdf = sdf.update(process_message)
-    print(f"[INFO] Consumer running for pipeline: {pipeline.input_sensor} consuming {pipeline.vision_models} model")
+    print(f"[INFO] Consumer running for pipeline: {pipeline.input_sensor} consuming {pipeline.perceptions} model")
     
     # Ejecutar la aplicación
     app.run()
@@ -116,16 +122,23 @@ def control_perception_streaming(pipelines):
     Crea procesos independientes para cada pipeline.
     """
     processes = []
-
-    for pipeline in pipelines:
+    
+    final_pipelines = pipelines_transformation(pipelines)
+    
+    for pipeline in final_pipelines:
         # Crear un nuevo proceso para cada pipeline
         process = multiprocessing.Process(target=run_app, args=(pipeline,))
         process.start()
         processes.append(process)
 
-    # Esperar a que los procesos terminen (normalmente no lo harán porque `app.run()` es bloqueante)
-    for process in processes:
-        process.join()
+    try:
+        for process in processes:
+            process.join()
+    except KeyboardInterrupt:
+        print("[INFO] Terminating perception stream")
+        for process in processes:
+            process.terminate()
+
 
 def _generate_random_group_id(length=10):
     """
@@ -133,3 +146,19 @@ def _generate_random_group_id(length=10):
     """
     chars = string.ascii_letters + string.digits
     return ''.join(random.choices(chars, k=length))
+
+def pipelines_transformation(pipelines):
+    transformed_pipelines = []
+    for pipeline in pipelines:
+        for perception in pipeline.perceptions:
+            new_pipeline = SensorToModelPipeline(
+                input_sensor=pipeline.input_sensor,
+                sensor_type=pipeline.sensor_type,
+                sensor_position=pipeline.sensor_position,
+                perceptions=[perception],
+                output_decision=pipeline.output_decision
+            )
+            transformed_pipelines.append(new_pipeline)
+    return transformed_pipelines
+    
+    
