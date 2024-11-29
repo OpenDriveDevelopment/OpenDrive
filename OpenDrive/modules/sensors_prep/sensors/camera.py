@@ -10,12 +10,14 @@ import base64
 
 class Camera(Sensor):
     def __init__(self, port, sensing_speed: int = 0.1):
+        super().__init__() 
         self.port = port
         self.sensing_speed = sensing_speed
         self.streaming = False
         
     def enable_sensor(self):
         """Enables camera sensing by instantiating the cap(capture) instance variable and assigning it a port"""
+        self.state = "Enabled"
         self.cap = cv2.VideoCapture(self.port)
         width = int(self.cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         height = int(self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
@@ -35,9 +37,12 @@ class Camera(Sensor):
         self.state = "Paused"
         print("Deteniendo la detección de la cámara.")
 
-    async def start_data_streaming(self):
+    async def start_data_streaming(self, start_time):
         self.streaming = True
         producer = DataProducer("sensor", "camera", self.port)
+        
+        sensing_interval_ns = int(self.sensing_speed * 1e9)
+        recurrent_time = start_time
         
         while self.streaming:
             print("Producing sensor data")
@@ -51,9 +56,10 @@ class Camera(Sensor):
                         message_value = buffer.tobytes()
                         encoded_message  = base64.b64encode(message_value).decode('utf-8')
                         
+                        recurrent_time += sensing_interval_ns
                         #creamos objeto que representara la data generada
                         result_payload = {
-                            "timestamp": int(datetime.now().timestamp() * 1e9),
+                            "timestamp": int(recurrent_time),
                             "sensor_data": encoded_message
                         }
                         

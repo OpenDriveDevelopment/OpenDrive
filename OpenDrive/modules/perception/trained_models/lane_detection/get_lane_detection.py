@@ -40,7 +40,7 @@ def get_lane_detection(image):
     # Preprocesar la imagen
     image = cv2.resize(image, (IMG_SIZE, IMG_SIZE))
     # Obtener la máscara binaria predicha por el modelo
-    pred_mask = model.predict(np.expand_dims(image, axis=0))
+    pred_mask = model.predict(np.expand_dims(image, axis=0),verbose=False)
     # Redondear la máscara predicha para obtener valores binarios (0 o 1)
     mask = np.round_(pred_mask[0])
     # Convertir la máscara a una lista de listas para compatibilidad con JSON

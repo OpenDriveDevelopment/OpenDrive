@@ -1,18 +1,16 @@
-import asyncio
 from OpenDrive.modules.sensors_prep.sensors.camera import Camera
-from OpenDrive.core.sensors_prep.sensors_stream_control import start_sensors_streaming
+from OpenDrive.modules.sensors_prep.pipeline_definition.sensors_stream_control import start_sensors_streaming
 
-async def main():
+def main():
     cam1 = Camera(1,.3)
     cam1.enable_sensor()
-    
+
     cam2 = Camera(0,.3)
     cam2.enable_sensor()
-    
-    await start_sensors_streaming([cam2, cam1])
+
+    start_sensors_streaming([cam2, cam1])
     
 if __name__ == "__main__":
-    try:
-        asyncio.run(main())
-    except KeyboardInterrupt:
-        pass
+    main()
+    
+    
