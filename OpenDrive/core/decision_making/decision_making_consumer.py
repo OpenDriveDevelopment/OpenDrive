@@ -1,115 +1,94 @@
+from datetime import datetime
 import json
 from functools import partial
 from quixstreams import Application
 import traceback
-import asyncio
 
 received_data = {}
-data_by_sensor_and_model = {}
+models_that_went_throu = {}
 last_processed_frame = -1
 
 def execute_operation(message, pipeline, app):
     """
-    Procesa un mensaje Kafka, deserializa los datos y extrae el frame_id y la data.
+    Processes a Kafka message, deserializes data, and extracts frame_id and associated data.
     """
-
     try:
-        # Deserializar el mensaje recibido
+        # Deserialize the incoming message
         message_decoded = message.decode("utf-8")
         message_json = json.loads(message_decoded)
 
-        # Extraer frame_id y data
+        # Extract frame_id, data, timestamp, and position_sensor
         frame_id = message_json.get("id")
         data = message_json.get("data")
         timestamp = message_json.get("timestamp")
-        side = message_json.get("side")
+        position_sensor = message_json.get("position_sensor")
 
-        # Cosa magica
-        # Split the string by underscores
-        parts = frame_id.split("_")
+        # Update the shared dictionary
+        received_data.setdefault(timestamp, []).append((frame_id + "_" + position_sensor, data))
 
-        model = parts[-1]
-        sensor = "_".join(parts[:-1])
-
-
-        """
-        # Print metadata
-        print(f"\n{sensor} at time {timestamp}:")
-        if model == "signals":
-            for signal in data:
-                print(f"Detected a signal of type {signal['class_name']} with a confidence of {signal['confidence'] * 100:.2f}%")
-        elif model == "lane":
-            print("Received the matrix representing the lane")
-        elif model == "objects":
-            for obj in data:
-                print(f"Detected an object of type {obj['class_name']} with a confidence of {obj['confidence'] * 100:.2f}%")
-
-        print("\n")
-        """
-
-
-        # Procesar el frame_id y actualizar received_data
-        # Asegurar la inicialización del conjunto en received_data
-        received_data.setdefault(timestamp, set()).add((frame_id + "_" + side, str(data)))
-
-        print("B")
-
-        # Procesar el frame o realizar otras operaciones
+        process_data()
         return frame_id, data
 
     except Exception as e:
-        print(f"Error al procesar el mensaje: {e}")
+        print(f"Error processing message: {e}")
         traceback.print_exc()
         return None, None
     
-async def process_data():
+def process_data():
     """
-    Process the received data, ensuring each frame has exactly three sensors' data
-    and meets the timestamp requirement. Deletes already processed or incomplete frames
-    to maintain optimal performance.
+    Processes received data, ensuring each frame has data from three sensors 
+    and meets timestamp requirements.
     """
     global last_processed_frame
 
-    # List to keep track of timestamps to be deleted
-    timestamps_to_delete = []
+    try:
+        timestamps_to_delete = []
 
-    print("A")
+        # Process timestamps in chronological order
+        for timestamp in sorted(received_data.keys()):
 
-    # Process frames in chronological order
-    for timestamp in sorted(received_data.keys()):
-        print(f"Processing timestamp: {timestamp}")
+            if len(received_data[timestamp]) == 3:
+                if last_processed_frame < timestamp:
+                    #print(f"Processing frame at timestamp {timestamp}:")
+                    for sensor_data in received_data[timestamp]:
+                        parts = sensor_data[0].split("_")
 
-        if len(received_data[timestamp]) == 3:
-            if last_processed_frame < timestamp:
-                # Process the frame
-                for sensor_data in received_data[timestamp]:
-                    print(f"Sensor: {sensor_data[0]}")
-                    # Uncomment the following line to display data
-                    # print(f"Data: {sensor_data[1]}")
-                last_processed_frame = timestamp  # Update the last processed frame
-                timestamps_to_delete.append(timestamp)  # Mark for deletion
+                        # print(f"Tipo: {parts[0]}")
+                        # print(f"Sub-tipo: {parts[1]}")
+                        # print(f"Puerto: {parts[2]}")
+                        # print(f"Modelo: {parts[3]}")
+                        # print(f"Lado: {parts[4]}")
+                        # print(f"Data: {sensor_data[1]}")
+
+                    # current_timestamp = int(datetime.now().timestamp() * 1e9)
+                    # Calcular la diferencia en milisegundos
+                    # difference_ms = (current_timestamp - timestamp) / 1_000_000
+                    # Imprimir la diferencia
+                    # print(f"Diferencia en milisegundos: {difference_ms} ms")
+
+                    last_processed_frame = timestamp
+                    timestamps_to_delete.append(timestamp)
+                else:
+                    print(f"Frame at {timestamp} already processed or received late.")
+                    timestamps_to_delete.append(timestamp)
             else:
-                print(f"Frame at {timestamp} already processed or data received too late. Deleting it.")
-                timestamps_to_delete.append(timestamp)  # Mark for deletion
-        else:
-            print(f"Frame at {timestamp} is not ready to be processed.")
+                if(last_processed_frame > timestamp):
+                    print(f"Frame at {timestamp} already processed or received late.")
+                    timestamps_to_delete.append(timestamp)
 
-    # Delete marked timestamps
-    for timestamp in timestamps_to_delete:
-        print(f"Frame at {timestamp} is being deleted.")
-        del received_data[timestamp]
+        # Delete processed timestamps
+        for timestamp in timestamps_to_delete:
+            del received_data[timestamp]
 
-    return None
-
-async def tarea_periodica():
-    while True:
-        await process_data()
-        await asyncio.sleep(0.1) 
+        # Write back to the shared namespace
+    except Exception as e:
+        print(f"Error in process_data: {e}")
+        traceback.print_exc()
 
 
-async def run_app():
+def main():
 
-    topics = ["output_topic_objects"]
+    topics = ["output_topic_objects1"]
     
     if not topics:
         print("No perception pipelines have been provided for streaming")
@@ -126,9 +105,7 @@ async def run_app():
         sdf = app.dataframe(input_topic)
         sdf = sdf.update(partial(execute_operation, pipeline=topic, app=app)) ## Es necesario utilizar el partial para que los parametros de la funcion sean pasados correctamente
         
-    asyncio.create_task(tarea_periodica())
-
-    app.run()
+    app.run() 
 
 if __name__ == '__main__':
-    asyncio.run(main())
+    main()
