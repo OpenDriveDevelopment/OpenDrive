@@ -1,7 +1,10 @@
 __pycache__/
+
+# Ignorar videos
 *.mp4
 *.avi
 *.mov
 *.mkv
 *.flv
+*.wmv
 *.wmv
