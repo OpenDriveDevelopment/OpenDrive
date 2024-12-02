@@ -32,7 +32,7 @@ def get_sign_detection_image(image):
 
 def get_sign_detection(image):
     
-    results = model(image)
+    results = model(image, verbose=False)
     
     # Lista para almacenar la metadata
     metadata = []
