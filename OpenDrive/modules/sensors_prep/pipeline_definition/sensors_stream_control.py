@@ -6,12 +6,12 @@ async def wait_for_stop_command(stop_event):
     try:
         while True:
             try:
-                command = await asyncio.to_thread(input, "Type 'stop' to stop the streaming: ")
+                command = await asyncio.to_thread(input, "Type 'stop' or 'ctrl + c' to stop the streaming: ")
                 if command.strip().lower() == "stop":
                     stop_event.set()  # Trigger the stop event
                     break
                 else:
-                    print("Invalid command. Type 'stop' to stop the streaming.")
+                    print("Invalid command. Type 'stop' or 'ctrl + c' to stop the streaming.")
             except EOFError:
                 print("\n[WARNING] Error detected, triggering stop event.")
                 stop_event.set()
@@ -23,7 +23,7 @@ async def wait_for_stop_command(stop_event):
     finally:
         stop_event.set()
 
-async def start_sensors_streaming_internal(sensors):
+async def start_sensors_streaming_internal(sensors, loglevel):
     
     # # Crear un evento de parada para controlar la transmisión
     stop_event = asyncio.Event()
@@ -34,7 +34,7 @@ async def start_sensors_streaming_internal(sensors):
 
     for sensor in sensors:
         # # Iniciar la transmisión de datos en un hilo separado
-        streaming_task = asyncio.create_task(sensor.start_data_streaming(sensors_start_time)) # Ejecuta start_data_streaming sin esperar
+        streaming_task = asyncio.create_task(sensor.start_data_streaming(sensors_start_time, loglevel)) # Ejecuta start_data_streaming sin esperar
         streaming_task_list.append(streaming_task)
 
     stop_command_task = asyncio.create_task(wait_for_stop_command(stop_event))
@@ -54,7 +54,7 @@ async def start_sensors_streaming_internal(sensors):
     stop_command_task.cancel()
     
     
-def start_sensors_streaming(sensors):
+def start_sensors_streaming(sensors, loglevel= 0):
     
     if not sensors:
         print("[ERROR] No sensors have been provided for streaming")
@@ -65,6 +65,6 @@ def start_sensors_streaming(sensors):
             if sensor.state != "Enabled":
                 raise RuntimeError(f"[ERROR] The sensor {sensor.sensor_id} it is not enabled.")
 
-        asyncio.run(start_sensors_streaming_internal(sensors))
+        asyncio.run(start_sensors_streaming_internal(sensors, loglevel))
     except KeyboardInterrupt:
         print("\n[WARNING] Streaming stoped by user.")
