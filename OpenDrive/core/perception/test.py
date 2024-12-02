@@ -34,7 +34,7 @@ while cam1.cap.isOpened():
     ret, frame = cam1.cap.read()
     
     start_time = time.perf_counter()
-    image_processed = get_lane_detection(frame)
+    image_processed = get_obj_detection(frame)
     end_time = time.perf_counter()
     elapsed_time = end_time - start_time
     print(f"El código tardó {elapsed_time:.4f} segundos en ejecutarse.")
