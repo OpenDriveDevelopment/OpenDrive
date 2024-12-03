@@ -1,5 +1,4 @@
 import cv2
-import wandb
 from ultralytics import YOLO
 import os
 
