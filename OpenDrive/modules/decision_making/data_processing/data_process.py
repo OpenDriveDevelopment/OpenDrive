@@ -72,7 +72,7 @@ def process_data(received_data, models_to_received, output_mode):
 
                     if close_objects_position_type_camera: 
 
-                        lane_change = free_lane_change( close_calls_function )
+                        lane_change = free_lane_change( close_objects_position_type_camera )
                         print( lane_change )
 
                         
