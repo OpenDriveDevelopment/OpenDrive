@@ -1,12 +1,12 @@
 from datetime import datetime
 import traceback
-from alerts.camera.close_calls_objects import close_calls_function
-from alerts.camera.lane_change import free_lane_change
+from OpenDrive.modules.decision_making.alerts.camera.close_calls_objects import close_calls_function
+from OpenDrive.modules.decision_making.alerts.camera.lane_change import free_lane_change
 from collections import defaultdict
 
 last_processed_frame = -1
 
-def process_data(received_data, models_to_received):
+def process_data(received_data, models_to_received, output_mode):
     """
     Processes received data, ensuring each frame has data from three sensors 
     and meets timestamp requirements.
@@ -36,6 +36,8 @@ def process_data(received_data, models_to_received):
                         print(f"Puerto: {parts[2]}")
                         print(f"Modelo: {parts[3]}")
                         print(f"Lado: {parts[4]}")
+                        print(f"Height: {parts[5]}")
+                        print(f"Width: {parts[6]}")
                         # print(f"Data: {sensor_data[1]}")
 
                     # current_timestamp = int(datetime.now().timestamp() * 1e9)
@@ -59,8 +61,8 @@ def process_data(received_data, models_to_received):
                                 y2 = data_object["bounding_box"]["y2"]
                                 coordenates.append( ( x1, x2, y2 ) )
 
-                            height = parts[5],
-                            width =  parts[6],
+                            height = int(parts[5])
+                            width =  int(parts[6])
 
                             close_objects = close_calls_function( coordenates, height, width, type = parts[4] )
 
