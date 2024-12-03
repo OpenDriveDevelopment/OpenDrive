@@ -7,7 +7,7 @@ from OpenDrive.modules.decision_making.data_processing.data_process import proce
 
 received_data = {}
 
-def execute_operation(message, pipeline, app, models_to_received, output_mode):
+def execute_operation(message, pipeline, app, models_to_received, output_mode, function_mode):
     """
     Processes a Kafka message, deserializes data, and extracts frame_id and associated data.
     """
@@ -27,7 +27,7 @@ def execute_operation(message, pipeline, app, models_to_received, output_mode):
         # Update the shared dictionary
         received_data.setdefault(timestamp, []).append((frame_id + "_" + position_sensor + "_" + str(frame_height) + "_" + str(frame_width), data))
 
-        process_data(received_data, models_to_received, output_mode)
+        process_data(received_data, models_to_received, output_mode, function_mode)
         return frame_id, data
 
     except Exception as e:
@@ -35,7 +35,7 @@ def execute_operation(message, pipeline, app, models_to_received, output_mode):
         traceback.print_exc()
         return None, None
 
-def start_data_reception(models_to_received, output_mode = "console"):
+def start_data_reception(models_to_received, output_mode = "console", function_mode = "four_cameras"):
 
     topic = "output_topic_objects1"
     
@@ -47,6 +47,6 @@ def start_data_reception(models_to_received, output_mode = "console"):
     
     input_topic = app.topic(name=topic, value_deserializer="bytes")
     sdf = app.dataframe(input_topic)
-    sdf = sdf.update(partial(execute_operation, pipeline=topic, app=app, models_to_received=models_to_received, output_mode=output_mode))
+    sdf = sdf.update(partial(execute_operation, pipeline=topic, app=app, models_to_received=models_to_received, output_mode=output_mode, function_mode=function_mode))
         
     app.run()

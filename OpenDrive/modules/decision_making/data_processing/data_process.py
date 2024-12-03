@@ -6,7 +6,7 @@ from collections import defaultdict
 
 last_processed_frame = -1
 
-def process_data(received_data, models_to_received, output_mode):
+def process_data(received_data, models_to_received, output_mode, function_mode):
     """
     Processes received data, ensuring each frame has data from three sensors 
     and meets timestamp requirements.
