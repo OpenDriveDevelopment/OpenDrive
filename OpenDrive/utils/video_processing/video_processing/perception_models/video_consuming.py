@@ -52,7 +52,7 @@ def consuming_video_real_time_jumpFrame(path_input_video, name_window):
 
 
 # Creación de hilos
-thread1 = threading.Thread(target=consuming_video_real_time_jumpFrame, args=('OpenDrive/utils/video_processing/input_videos/simulador3-Frontal.mp4', 'Frontal'))
+thread1 = threading.Thread(target=consuming_video_real_time_jumpFrame, args=('OpenDrive/utils/video_processing/input_videos/simulador1-Frontal.mp4', 'Frontal'))
 # thread2 = threading.Thread(target=consuming_video_real_time_jumpFrame, args=('OpenDrive/utils/video_processing/input_videos/simulador3-Trasero.mp4', 'Trasero'))
 # thread3 = threading.Thread(target=consuming_video_real_time_jumpFrame, args=('OpenDrive/utils/video_processing/input_videos/simulador1-Izquierdo.mp4', 'Izquierdo'))
 # thread4 = threading.Thread(target=consuming_video_real_time_jumpFrame, args=('OpenDrive/utils/video_processing/input_videos/simulador1-Derecho.mp4', 'Derecho'))
