@@ -7,7 +7,7 @@ from OpenDrive.modules.decision_making.data_processing.data_process import proce
 
 received_data = {}
 
-def execute_operation(message, pipeline, app, models_to_received):
+def execute_operation(message, pipeline, app, models_to_received, output_mode, function_mode, kafka_topic):
     """
     Processes a Kafka message, deserializes data, and extracts frame_id and associated data.
     """
@@ -21,11 +21,13 @@ def execute_operation(message, pipeline, app, models_to_received):
         data = message_json.get("data")
         timestamp = message_json.get("timestamp")
         position_sensor = message_json.get("position_sensor")
+        frame_height = message_json.get("frame_height")
+        frame_width = message_json.get("frame_width")
 
         # Update the shared dictionary
-        received_data.setdefault(timestamp, []).append((frame_id + "_" + position_sensor, data))
+        received_data.setdefault(timestamp, []).append((frame_id + "_" + position_sensor + "_" + str(frame_height) + "_" + str(frame_width), data))
 
-        process_data(received_data, models_to_received)
+        process_data(received_data, models_to_received, output_mode, function_mode, kafka_topic)
         return frame_id, data
 
     except Exception as e:
@@ -33,13 +35,9 @@ def execute_operation(message, pipeline, app, models_to_received):
         traceback.print_exc()
         return None, None
 
-def start_data_reception(models_to_received):
+def start_data_reception(models_to_received, output_mode = "console", function_mode = "four_cameras", kafka_topic = "processed_data_output"):
 
-    topics = ["output_topic_objects1"]
-    
-    if not topics:
-        print("No perception pipelines have been provided for streaming")
-        return
+    topic = "output_topic_objects1"
     
     app = Application(
         broker_address="localhost:9092",
@@ -47,9 +45,8 @@ def start_data_reception(models_to_received):
         consumer_group="unique_consumer_group_nam3"
     )
     
-    for topic in topics:
-        input_topic = app.topic(name=topic, value_deserializer="bytes")
-        sdf = app.dataframe(input_topic)
-        sdf = sdf.update(partial(execute_operation, pipeline=topic, app=app, models_to_received=models_to_received)) ## Es necesario utilizar el partial para que los parametros de la funcion sean pasados correctamente
+    input_topic = app.topic(name=topic, value_deserializer="bytes")
+    sdf = app.dataframe(input_topic)
+    sdf = sdf.update(partial(execute_operation, pipeline=topic, app=app, models_to_received=models_to_received, output_mode=output_mode, function_mode=function_mode, kafka_topic=kafka_topic))
         
     app.run()

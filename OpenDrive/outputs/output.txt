@@ -1,0 +1,219 @@
+Processing frame at timestamp 1733373637213175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8486259579658508, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373637513175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8504712581634521, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373637813175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8392928838729858, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373638113175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8329141139984131, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373638413175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8486133217811584, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373638713175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8462663292884827, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373639013175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8534248471260071, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373639313175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8445236086845398, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373639613175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8493048548698425, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373639913175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.835668683052063, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373640213175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8503520488739014, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373640513175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8433031439781189, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373640813175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8539865016937256, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373641113175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8511216044425964, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373641413175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8368101119995117, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373641713175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8383066654205322, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373642013175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.838952898979187, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373642313175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8265458345413208, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373642613175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8446006774902344, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373642913175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8521952629089355, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373643213175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.838697612285614, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373643513175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8394124507904053, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373643813175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8251095414161682, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373644113175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8111541867256165, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373644413175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8228615522384644, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373644713175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8144113421440125, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373645013175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8304916024208069, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373645313175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8269221782684326, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373645613175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8175919055938721, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373645913175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8059546947479248, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373646213175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.7951084971427917, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373646513175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.79225093126297, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373646813175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8207917213439941, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373647113175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.7972504496574402, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373647413175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.7811426520347595, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373647713175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.7908732891082764, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373648013175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8076778650283813, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373648313175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.7971847653388977, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373648613175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8083296418190002, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373648913175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8151091933250427, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373649213175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.7956156134605408, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373649513175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.7784414291381836, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373649813175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.7960948944091797, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373650113175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.7811675071716309, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373650413175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.7974089980125427, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373650713175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.797939658164978, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373651013175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.7974385023117065, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373651313175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.7897900938987732, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373651613175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8161571621894836, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373651913175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8262433409690857, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373652213175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8038282990455627, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373652513175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8314878344535828, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373652813175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8145114779472351, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373653113175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8145874738693237, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373653413175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.82574063539505, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373653713175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8211660385131836, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373654013175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8197829127311707, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373654313175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8674240112304688, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373654613175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8600863814353943, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373654913175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8715800642967224, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373655213175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8996708989143372, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373655513175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8882763385772705, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373655813175040:
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8508694767951965, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+{'traffic_signs': []}
+Processing frame at timestamp 1733373656113175040:
+{'traffic_signs': []}
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8591025471687317, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+Processing frame at timestamp 1733373656413175040:
+{'traffic_signs': []}
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.838223397731781, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+Processing frame at timestamp 1733373656713175040:
+{'traffic_signs': []}
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8572829365730286, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+Processing frame at timestamp 1733373657013175040:
+{'traffic_signs': []}
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8575657606124878, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+Processing frame at timestamp 1733373657313175040:
+{'traffic_signs': []}
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8260985016822815, 'distance (mts)': 0.34, 'close_to_side': 'center', 'action': 'break'}]}
+Processing frame at timestamp 1733373657613175040:
+{'traffic_signs': []}
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8409279584884644, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+Processing frame at timestamp 1733373657913175040:
+{'traffic_signs': []}
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8093202114105225, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+Processing frame at timestamp 1733373658213175040:
+{'traffic_signs': []}
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8080571889877319, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
+Processing frame at timestamp 1733373658513175040:
+{'traffic_signs': []}
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8311699628829956, 'distance (mts)': 0.36, 'close_to_side': 'center', 'action': 'break'}]}
+Processing frame at timestamp 1733373658813175040:
+{'traffic_signs': []}
+{'front_road_obstacles': [{'type': 'person', 'precision': 0.8255726099014282, 'distance (mts)': 0.35, 'close_to_side': 'center', 'action': 'break'}]}
