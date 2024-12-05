@@ -1,8 +1,8 @@
 from datetime import datetime
 import traceback
+from collections import defaultdict
 from OpenDrive.modules.decision_making.alerts.camera.close_calls_objects import close_calls_function
 from OpenDrive.modules.decision_making.alerts.camera.lane_change import free_lane_change
-from collections import defaultdict
 
 from OpenDrive.modules.decision_making.alerts.camera.road_obstacles import front_road_obstacles, rear_road_obstacles, side_road_obstacles
 from OpenDrive.modules.decision_making.alerts.camera.signals_actions import traffic_signs
