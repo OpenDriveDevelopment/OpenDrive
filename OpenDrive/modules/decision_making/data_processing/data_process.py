@@ -43,18 +43,17 @@ def process_data(received_data, models_to_received, output_mode, function_mode, 
                     close_objects_position_type_camera = defaultdict( list )
                     processed_data = []
     
-                    print(f"Processing frame at timestamp {timestamp}:")
                     for sensor_data in received_data[timestamp]:
 
                         parts = sensor_data[0].split("_")
 
-                        print(f"Tipo: {parts[0]}")
-                        print(f"Sub-tipo: {parts[1]}")
-                        print(f"Puerto: {parts[2]}")
-                        print(f"Modelo: {parts[3]}")
-                        print(f"Lado: {parts[4]}")
-                        print(f"Height: {parts[5]}")
-                        print(f"Width: {parts[6]}")
+                        # print(f"Tipo: {parts[0]}")
+                        # print(f"Sub-tipo: {parts[1]}")
+                        # print(f"Puerto: {parts[2]}")
+                        # print(f"Modelo: {parts[3]}")
+                        # print(f"Lado: {parts[4]}")
+                        # print(f"Height: {parts[5]}")
+                        # print(f"Width: {parts[6]}")
                         # print(f"Data: {sensor_data[1]}")
 
                         # current_timestamp = int(datetime.now().timestamp() * 1e9)
@@ -122,11 +121,13 @@ def process_data(received_data, models_to_received, output_mode, function_mode, 
                     ###########################################################
 
                     if output_mode == "console":
+                        print(f"Processing frame at timestamp {timestamp}:")
                         for information in processed_data:
                             print(information)
                     elif output_mode == "document":
                         print("Generating document")
-                        with open("output.txt", "w") as file:
+                        with open("OpenDrive/outputs/output.txt", "a") as file:
+                            file.write(f"Processing frame at timestamp {timestamp}:\n")
                             for information in processed_data:
                                 file.write(f"{information}\n")  # Escribe cada elemento seguido de un salto de línea
 
@@ -139,8 +140,8 @@ def process_data(received_data, models_to_received, output_mode, function_mode, 
                         )
 
                         result_payload = {
-                            "id": sensor_data[0],
-                            "data": str(processed_data)
+                            "data": str(processed_data),
+                            "timestamp": timestamp
                         }
                         serialized_result = json.dumps(result_payload)
 
