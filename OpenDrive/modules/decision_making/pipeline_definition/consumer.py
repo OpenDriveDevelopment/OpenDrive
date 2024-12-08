@@ -35,10 +35,7 @@ def execute_operation(message, pipeline, app, models_to_received, output_mode, f
         traceback.print_exc()
         return None, None
 
-def start_data_reception(models_to_received, output_mode = "console", function_mode = "four_cameras", kafka_topic = "processed_data_output"):
-
-    topic = "output_topic_objects1"
-    
+def start_data_reception(models_to_received, topic = "output_topic_objects1", output_mode = "console", function_mode = "four_cameras", kafka_topic = "processed_data_output"):    
     app = Application(
         broker_address="localhost:9092",
         auto_offset_reset="latest",
