@@ -1,609 +1,1024 @@
-Processing frame at timestamp 2024-12-05 17:20:08.086811:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.753216564655304, 'distance (mts)': 0.75, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}, {'type': 'person', 'precision': 0.4004334807395935, 'distance (mts)': 1.16, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8394208550453186, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:09.086811:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9185749292373657, 'distance (mts)': 1.67, 'close_to_side': 'left', 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.950477123260498, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.873174250125885, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.862144410610199, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:10.086811:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8881615996360779, 'distance (mts)': 1.65, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'leftside', 'type': 'person', 'precision': 0.8332390189170837, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9322596788406372, 'distance (mts)': 1.99, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6399193406105042, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.4495674669742584, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:11.086811:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.6892369389533997, 'distance (mts)': 1.72, 'close_to_side': 'left', 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9564984440803528, 'distance (mts)': 1.75, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6842430830001831, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.3822695314884186, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'leftside', 'type': 'person', 'precision': 0.6583055853843689, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:12.086811:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.49642419815063477, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.42165082693099976, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9426606297492981, 'distance (mts)': 1.84, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:13.086811:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7195950746536255, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:14.086811:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6714167594909668, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:15.086811:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6671765446662903, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:16.086811:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7223072648048401, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'leftside', 'type': 'person', 'precision': 0.9418685436248779, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:17.086811:
-{'side_obstacles': [{'side': 'leftside', 'type': 'person', 'precision': 0.9412246346473694, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6095200181007385, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:18.086811:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.3910186290740967, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'leftside', 'type': 'person', 'precision': 0.7611977458000183, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:49.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9568933844566345, 'distance (mts)': 1.28, 'close_to_side': 'left', 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9290372133255005, 'distance (mts)': 1.81, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.5305263996124268, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.38386085629463196, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:50.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8540870547294617, 'action': 'caution'}]}
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9637963771820068, 'distance (mts)': 1.35, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:51.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8919486999511719, 'distance (mts)': 1.33, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7613813877105713, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:52.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6792199611663818, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.5624455809593201, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.41897052526474, 'action': 'caution'}]}
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8875401616096497, 'distance (mts)': 1.76, 'close_to_side': 'left', 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9452552199363708, 'distance (mts)': 1.75, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:53.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8762665390968323, 'distance (mts)': 2.0, 'close_to_side': 'left', 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9419371485710144, 'distance (mts)': 1.68, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8453185558319092, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:54.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.878787636756897, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9358003735542297, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:55.900968:
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9419293403625488, 'distance (mts)': 1.62, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7855936884880066, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.3678191304206848, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:56.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.798718273639679, 'distance (mts)': 1.82, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9072916507720947, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9262685775756836, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:57.900968:
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9168402552604675, 'distance (mts)': 1.6, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8495564460754395, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:58.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.807083010673523, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9183475375175476, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:20:59.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8883541226387024, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.928819477558136, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:00.900968:
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9256467819213867, 'distance (mts)': 1.6, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.894672691822052, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:01.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8601796627044678, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9296209216117859, 'distance (mts)': 1.59, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:02.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8910234570503235, 'distance (mts)': 1.53, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8644242286682129, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9305617809295654, 'distance (mts)': 1.59, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:03.900968:
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9427614212036133, 'distance (mts)': 1.6, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.857204794883728, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:04.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8487259745597839, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.33227622509002686, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9293003082275391, 'distance (mts)': 1.59, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:05.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8779323101043701, 'distance (mts)': 1.1, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8228970766067505, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9431038498878479, 'distance (mts)': 1.59, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:06.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9147316813468933, 'distance (mts)': 1.26, 'close_to_side': 'left', 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9208288192749023, 'distance (mts)': 1.6, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8355592489242554, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:07.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8547024726867676, 'distance (mts)': 1.37, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.848922848701477, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9306188821792603, 'distance (mts)': 1.6, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:08.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8217525482177734, 'distance (mts)': 1.29, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8435424566268921, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9235007762908936, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:09.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8097785115242004, 'distance (mts)': 1.3, 'close_to_side': 'left', 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9416373372077942, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7840240597724915, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:10.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.7921738028526306, 'distance (mts)': 1.43, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8310967683792114, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9374089241027832, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:11.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.835185170173645, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9440852403640747, 'distance (mts)': 1.62, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:12.900968:
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9340352416038513, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8306092023849487, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:13.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.924637496471405, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.8249467611312866, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9331222772598267, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:15.900968:
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9202271699905396, 'distance (mts)': 1.58, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8453533053398132, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.7754599452018738, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:16.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8716005682945251, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.7519214153289795, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9356368780136108, 'distance (mts)': 1.58, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:17.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8977298736572266, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.739612877368927, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9452307224273682, 'distance (mts)': 1.59, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:18.900968:
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9457914233207703, 'distance (mts)': 1.62, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7706791758537292, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.7147623896598816, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:19.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7863008975982666, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.7155252695083618, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.941444456577301, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:20.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8269103169441223, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.7381166815757751, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9337716698646545, 'distance (mts)': 1.59, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:21.900968:
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9336728453636169, 'distance (mts)': 1.59, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6960736513137817, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.6277748942375183, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:22.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.848074734210968, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.8343318104743958, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9294412732124329, 'distance (mts)': 1.59, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:23.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7945168018341064, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.705676257610321, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9362980723381042, 'distance (mts)': 1.6, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:24.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.7480491399765015, 'distance (mts)': 1.9, 'close_to_side': 'left', 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9413638114929199, 'distance (mts)': 1.69, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6890293955802917, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.4549517035484314, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.284383088350296, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:25.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.6402453184127808, 'distance (mts)': 1.38, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7477462887763977, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9522041082382202, 'distance (mts)': 1.75, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:26.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.6849647760391235, 'distance (mts)': 1.23, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7554842233657837, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.7116405367851257, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.6413361430168152, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9319117069244385, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:27.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8947014212608337, 'distance (mts)': 1.38, 'close_to_side': 'left', 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9370094537734985, 'distance (mts)': 1.6, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6415743231773376, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.4520464539527893, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.3861953616142273, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.367247998714447, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:28.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8688374161720276, 'distance (mts)': 1.27, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7056374549865723, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.6589463353157043, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.5609251856803894, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.558445394039154, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9454739689826965, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:29.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9050145745277405, 'distance (mts)': 1.29, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8134194612503052, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.40574902296066284, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:30.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9071849584579468, 'distance (mts)': 1.05, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7411198616027832, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.6332321166992188, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.39844441413879395, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:31.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.915891706943512, 'distance (mts)': 1.73, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7029818296432495, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.6426894068717957, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.37037771940231323, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:32.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8371037244796753, 'distance (mts)': 1.85, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.710963249206543, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.5877617001533508, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.38605067133903503, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:33.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9447957277297974, 'distance (mts)': 1.64, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8086492419242859, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.7464382648468018, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.6689584851264954, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:34.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9197366237640381, 'distance (mts)': 0.95, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8462646007537842, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.8269970417022705, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:35.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9206967353820801, 'distance (mts)': 1.63, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9140891432762146, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:36.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8145995140075684, 'distance (mts)': 1.07, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8513959050178528, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:37.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8124595880508423, 'distance (mts)': 1.46, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9390502572059631, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:38.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8432787656784058, 'distance (mts)': 1.37, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9167800545692444, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:39.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8504523038864136, 'distance (mts)': 1.08, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9004777073860168, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:40.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8833408951759338, 'distance (mts)': 1.06, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8986409306526184, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:41.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.7258038520812988, 'distance (mts)': 0.86, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8860009908676147, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:42.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8880401849746704, 'distance (mts)': 0.73, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8891700506210327, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:43.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8518989682197571, 'distance (mts)': 0.66, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9456868171691895, 'distance (mts)': 1.98, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8979124426841736, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:44.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8986303210258484, 'distance (mts)': 0.63, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9346181154251099, 'distance (mts)': 1.9, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9110943675041199, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'leftside', 'type': 'person', 'precision': 0.8877249956130981, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:45.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8779306411743164, 'distance (mts)': 0.63, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9450744986534119, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'leftside', 'type': 'person', 'precision': 0.906409502029419, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9453240633010864, 'distance (mts)': 1.87, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:46.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9041752815246582, 'distance (mts)': 0.68, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9428805112838745, 'distance (mts)': 1.9, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9085911512374878, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:47.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8413453698158264, 'distance (mts)': 0.8, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9043005108833313, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:48.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8585309386253357, 'distance (mts)': 0.86, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8933093547821045, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.4573255479335785, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:49.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8630210757255554, 'distance (mts)': 1.09, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8771843910217285, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.5484442710876465, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:50.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8509963750839233, 'distance (mts)': 1.25, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8579521179199219, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.6141870617866516, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:51.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9172881245613098, 'distance (mts)': 0.86, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.889309823513031, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:52.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9263797998428345, 'distance (mts)': 0.65, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8962157368659973, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:53.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.7335668802261353, 'distance (mts)': 0.65, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8803229331970215, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:54.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9140017032623291, 'distance (mts)': 0.63, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.909290611743927, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:55.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9122339487075806, 'distance (mts)': 0.62, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8001358509063721, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:56.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8404744863510132, 'distance (mts)': 0.63, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9474025368690491, 'distance (mts)': 2.0, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8295601010322571, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:57.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9225704073905945, 'distance (mts)': 0.64, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8008239269256592, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.5383843183517456, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.4187825322151184, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9559957981109619, 'distance (mts)': 1.83, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:58.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8510122299194336, 'distance (mts)': 0.67, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'leftside', 'type': 'person', 'precision': 0.9282487630844116, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9266368746757507, 'distance (mts)': 1.72, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8830790519714355, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:21:59.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9241461753845215, 'distance (mts)': 0.63, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8410326838493347, 'action': 'caution'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.918815553188324, 'distance (mts)': 1.94, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:00.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.909518837928772, 'distance (mts)': 0.63, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9298607110977173, 'distance (mts)': 1.67, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8789138793945312, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:01.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9151250123977661, 'distance (mts)': 0.63, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9334520697593689, 'distance (mts)': 1.6, 'close_to_side': 'left', 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:09:24.272419:
 {'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:02.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9141274690628052, 'distance (mts)': 0.7, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9092797636985779, 'distance (mts)': 1.82, 'close_to_side': 'left', 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:09:24.872419:
 {'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:03.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8567609190940857, 'distance (mts)': 1.0, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:04.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9173756837844849, 'distance (mts)': 1.09, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:05.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.3949519097805023, 'distance (mts)': 1.61, 'close_to_side': 'left', 'action': 'caution'}, {'type': 'person', 'precision': 0.310477614402771, 'distance (mts)': 1.6, 'close_to_side': 'left', 'action': 'caution'}, {'type': 'person', 'precision': 0.3104435205459595, 'distance (mts)': 1.6, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:06.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8812928199768066, 'distance (mts)': 0.64, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6700789928436279, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:07.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9518342018127441, 'distance (mts)': 0.68, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7875691652297974, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:08.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9247979521751404, 'distance (mts)': 0.64, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.5625970363616943, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:09.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8749907612800598, 'distance (mts)': 0.68, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.906880259513855, 'distance (mts)': 2.0, 'close_to_side': 'right', 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:09:25.472419:
 {'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:10.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8848111629486084, 'distance (mts)': 0.69, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6975488066673279, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:11.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.796115517616272, 'distance (mts)': 0.92, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6713396906852722, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:12.900968:
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9118212461471558, 'distance (mts)': 1.95, 'close_to_side': 'right', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8983785510063171, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:13.900968:
+Processing frame at timestamp 2024-12-10 17:09:26.072419:
 {'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:14.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.2601907551288605, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:09:26.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:27.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:27.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:28.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:29.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:29.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:30.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:30.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:31.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:32.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:32.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:33.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:33.872419:
+{'side_obstacles': [{'side': 'rightside', 'type': 'car', 'precision': 0.6667256951332092, 'action': 'caution'}]}
 {'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:15.900968:
+Processing frame at timestamp 2024-12-10 17:09:34.472419:
 {'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:16.900968:
+Processing frame at timestamp 2024-12-10 17:09:35.072419:
 {'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:17.900968:
+Processing frame at timestamp 2024-12-10 17:09:35.672419:
 {'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:18.900968:
+Processing frame at timestamp 2024-12-10 17:09:36.272419:
 {'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:19.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8744236826896667, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:20.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.740245521068573, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:21.900968:
+Processing frame at timestamp 2024-12-10 17:09:36.872419:
 {'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:22.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6081607341766357, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:23.900968:
+Processing frame at timestamp 2024-12-10 17:09:37.472419:
 {'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:24.900968:
-{'rear_road_obstacles': [{'type': 'car', 'precision': 0.9266824722290039, 'distance (mts)': 0.98, 'close_to_side': 'right', 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:09:38.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:38.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:39.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:39.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:40.472419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9484551548957825, 'action': 'caution'}]}
 {'left_change': False, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:25.900968:
-{'rear_road_obstacles': [{'type': 'car', 'precision': 0.8855737447738647, 'distance (mts)': 1.13, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:26.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8421010375022888, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:09:41.072419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.650679886341095, 'action': 'caution'}]}
 {'left_change': False, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:27.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9319361448287964, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8550369739532471, 'action': 'caution'}, {'side': 'rightside', 'type': 'car', 'precision': 0.7752093076705933, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:28.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8913992643356323, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:09:41.672419:
+{'rear_road_obstacles': [{'type': 'bus', 'precision': 0.8991081714630127, 'distance (mts)': 1.96, 'close_to_side': 'right', 'action': 'caution'}]}
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.3040089011192322, 'action': 'caution'}]}
 {'left_change': False, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:29.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9143072366714478, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:09:42.272419:
+{'rear_road_obstacles': [{'type': 'bus', 'precision': 0.9087371230125427, 'distance (mts)': 1.85, 'close_to_side': 'right', 'action': 'caution'}]}
 {'left_change': False, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:30.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9319095611572266, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:09:42.872419:
+{'rear_road_obstacles': [{'type': 'bus', 'precision': 0.9023221135139465, 'distance (mts)': 1.77, 'close_to_side': 'right', 'action': 'caution'}]}
 {'left_change': False, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:31.900968:
-{'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:32.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'person', 'precision': 0.8287834525108337, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8967206478118896, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:33.900968:
-{'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:34.900968:
-{'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:35.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8779021501541138, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:36.900968:
-{'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:37.900968:
-{'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:38.900968:
-{'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:39.900968:
-{'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:40.900968:
-{'front_road_obstacles': [{'type': 'car', 'precision': 0.9367735981941223, 'distance (mts)': 1.79, 'close_to_side': 'left', 'action': 'caution'}]}
-{'left_change': True, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:41.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.2681402862071991, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:42.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8636579513549805, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:43.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8029224872589111, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:44.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9095414280891418, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:45.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9029666185379028, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:46.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9106922149658203, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:47.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8983785510063171, 'distance (mts)': 1.55, 'close_to_side': 'right', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9292783737182617, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8942612409591675, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:48.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9073241949081421, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9286999702453613, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.6127709150314331, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:49.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.5486160516738892, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:50.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9022254347801208, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:09:43.472419:
+{'rear_road_obstacles': [{'type': 'bus', 'precision': 0.9068570137023926, 'distance (mts)': 1.69, 'close_to_side': 'right', 'action': 'caution'}]}
 {'left_change': False, 'right_change': True}
-Processing frame at timestamp 2024-12-05 17:22:51.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9078243970870972, 'distance (mts)': 1.7, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9365071058273315, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:09:44.072419:
+{'rear_road_obstacles': [{'type': 'bus', 'precision': 0.9230052828788757, 'distance (mts)': 1.61, 'close_to_side': 'right', 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:44.672419:
+{'rear_road_obstacles': [{'type': 'bus', 'precision': 0.9275270104408264, 'distance (mts)': 1.54, 'close_to_side': 'right', 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:45.272419:
+{'rear_road_obstacles': [{'type': 'bus', 'precision': 0.9394722580909729, 'distance (mts)': 1.48, 'close_to_side': 'right', 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:45.872419:
+{'rear_road_obstacles': [{'type': 'bus', 'precision': 0.9285023212432861, 'distance (mts)': 1.78, 'close_to_side': 'right', 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:46.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:47.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:47.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:48.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:48.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:49.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:50.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:50.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:51.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:51.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:52.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:53.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:53.672419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.9349871873855591, 'distance (mts)': 1.98, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:54.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:54.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:55.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:56.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:56.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:57.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:57.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:58.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:59.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:09:59.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:00.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:00.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:01.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:02.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:02.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:03.272419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.9118814468383789, 'distance (mts)': 1.92, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': False}
+Processing frame at timestamp 2024-12-10 17:10:03.872419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.9501464366912842, 'distance (mts)': 1.66, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': False}
+Processing frame at timestamp 2024-12-10 17:10:04.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:05.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:05.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:06.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:06.872419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.6962271928787231, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:07.472419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8785799145698547, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:08.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:08.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:09.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:09.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:10.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:11.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:11.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:12.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:12.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:13.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:14.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:14.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:15.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:15.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:16.472419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9215997457504272, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:17.072419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.927506685256958, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:17.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:18.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:18.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:19.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:20.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:20.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:21.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:21.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:22.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:23.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:23.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:24.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:24.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:25.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:26.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:26.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:27.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:27.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:28.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:29.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:29.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:30.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:30.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:31.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:32.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:32.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:33.272419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.7561903595924377, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:33.872419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8180635571479797, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:34.472419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8020270466804504, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:35.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:35.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:36.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:36.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:37.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:38.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:38.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:39.272419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8274892568588257, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:39.872419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8364067077636719, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:40.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:41.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:41.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:42.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:42.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:43.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:44.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:44.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:45.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:45.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:46.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:47.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:47.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:48.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:48.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:49.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:50.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:50.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:51.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:51.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:52.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:53.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:53.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:54.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:54.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:55.472419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.9079365134239197, 'distance (mts)': 1.71, 'close_to_side': 'right', 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:56.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:56.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:57.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:57.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:58.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:59.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:10:59.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:00.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:00.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:01.472419:
+{'side_obstacles': [{'side': 'rightside', 'type': 'motorcycle', 'precision': 0.4724733233451843, 'action': 'caution'}, {'side': 'rightside', 'type': 'car', 'precision': 0.3095245361328125, 'action': 'caution'}]}
+{'left_change': True, 'right_change': False}
+Processing frame at timestamp 2024-12-10 17:11:02.072419:
+{'side_obstacles': [{'side': 'rightside', 'type': 'car', 'precision': 0.8437067270278931, 'action': 'caution'}]}
+{'left_change': True, 'right_change': False}
+Processing frame at timestamp 2024-12-10 17:11:02.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:03.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:03.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:04.472419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.9376011490821838, 'distance (mts)': 1.45, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': False}
+Processing frame at timestamp 2024-12-10 17:11:05.072419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.9331149458885193, 'distance (mts)': 0.92, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:05.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:06.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:06.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:07.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:08.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:08.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9336647391319275, 'distance (mts)': 1.1, 'close_to_side': 'right', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:09.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:09.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:10.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:11.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:11.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:12.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:12.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:13.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:14.072419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.932272732257843, 'distance (mts)': 1.82, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': False}
+Processing frame at timestamp 2024-12-10 17:11:14.672419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.9110317230224609, 'distance (mts)': 2.0, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:15.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:15.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:16.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:17.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:17.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:18.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:18.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:19.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:20.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:20.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:21.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:21.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:22.472419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.9133809804916382, 'distance (mts)': 1.75, 'close_to_side': 'right', 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:23.072419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.9363807439804077, 'distance (mts)': 1.5, 'close_to_side': 'right', 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:23.672419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.9392967820167542, 'distance (mts)': 1.68, 'close_to_side': 'right', 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:24.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:24.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:25.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:26.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:26.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:27.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:27.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:28.472419:
+{'rear_road_obstacles': [{'type': 'truck', 'precision': 0.5858342051506042, 'distance (mts)': 1.95, 'close_to_side': 'right', 'action': 'caution'}, {'type': 'car', 'precision': 0.5151872634887695, 'distance (mts)': 1.95, 'close_to_side': 'right', 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:29.072419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.9034125208854675, 'distance (mts)': 1.67, 'close_to_side': 'right', 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:29.672419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.8411194682121277, 'distance (mts)': 1.94, 'close_to_side': 'right', 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:30.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:30.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:31.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:32.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:32.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:33.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:33.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:34.472419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.928623616695404, 'distance (mts)': 1.98, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': False}
+Processing frame at timestamp 2024-12-10 17:11:35.072419:
+{'rear_road_obstacles': [{'type': 'car', 'precision': 0.941421389579773, 'distance (mts)': 1.91, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': False}
+Processing frame at timestamp 2024-12-10 17:11:35.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:36.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:36.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:37.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:38.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:38.672419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8749076128005981, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:39.272419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8779658079147339, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:39.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:40.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:41.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:41.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:42.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:42.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:43.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:44.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:44.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:45.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:45.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:46.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:47.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:47.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:48.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:48.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:49.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:50.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:50.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:51.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:51.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:52.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:53.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:53.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:54.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:54.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:55.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:56.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:56.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:57.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:57.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:58.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:59.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:11:59.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:00.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:00.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:01.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:02.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:02.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:03.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:03.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:04.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:05.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:05.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:06.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:06.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:07.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:08.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:08.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:09.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:09.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:10.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:11.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:11.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:12.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:12.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:13.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:14.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:14.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:15.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:15.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:16.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:17.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:17.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:18.272419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9013609886169434, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:18.872419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9383683800697327, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:19.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:20.072419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9313535094261169, 'action': 'caution'}]}
+{'side_obstacles': [{'side': 'rightside', 'type': 'car', 'precision': 0.8477165699005127, 'action': 'caution'}]}
 {'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:52.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9168413877487183, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.30689048767089844, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:12:20.672419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.948313295841217, 'action': 'caution'}]}
+{'side_obstacles': [{'side': 'rightside', 'type': 'car', 'precision': 0.9127379059791565, 'action': 'caution'}]}
 {'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:53.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8450909852981567, 'distance (mts)': 1.5, 'close_to_side': 'left', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.5511183738708496, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:12:21.272419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8404691219329834, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:21.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:22.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:23.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:23.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:24.272419:
+{'side_obstacles': [{'side': 'rightside', 'type': 'car', 'precision': 0.8874649405479431, 'action': 'caution'}]}
 {'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:54.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9268725514411926, 'distance (mts)': 1.69, 'close_to_side': 'right', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7584438920021057, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:12:24.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:25.472419:
+{'side_obstacles': [{'side': 'rightside', 'type': 'car', 'precision': 0.931670069694519, 'action': 'caution'}]}
+{'left_change': True, 'right_change': False}
+Processing frame at timestamp 2024-12-10 17:12:26.072419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9002596735954285, 'action': 'caution'}]}
+{'side_obstacles': [{'side': 'rightside', 'type': 'car', 'precision': 0.9313334822654724, 'action': 'caution'}]}
 {'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:55.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.8685919046401978, 'distance (mts)': 1.81, 'close_to_side': 'right', 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8308053016662598, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:12:26.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:27.272419:
+{'side_obstacles': [{'side': 'rightside', 'type': 'car', 'precision': 0.9164072871208191, 'action': 'caution'}]}
+{'left_change': True, 'right_change': False}
+Processing frame at timestamp 2024-12-10 17:12:27.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:28.472419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.5695485472679138, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:29.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:29.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:30.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:30.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:31.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:32.072419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9141690135002136, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:32.672419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.7019740343093872, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:33.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:33.872419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8827003836631775, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:34.472419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8249748349189758, 'action': 'caution'}]}
+{'left_change': False, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:35.072419:
+{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.6900538802146912, 'action': 'caution'}]}
+{'side_obstacles': [{'side': 'rightside', 'type': 'car', 'precision': 0.9041600823402405, 'action': 'caution'}]}
 {'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:56.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9341560006141663, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6649687886238098, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:57.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6595152616500854, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.2522967457771301, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:12:35.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:36.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:36.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:37.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:38.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:38.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:39.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:39.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:40.472419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:41.072419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:41.672419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:42.272419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:42.872419:
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:43.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9357973337173462, 'distance (mts)': 2.0, 'close_to_side': 'center', 'action': 'break'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:44.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9290802478790283, 'distance (mts)': 1.9, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:44.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.929887056350708, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:45.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.930390477180481, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:45.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9225673675537109, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:46.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9288638830184937, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:47.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9247804880142212, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:47.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9274101853370667, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:48.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9255306124687195, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:48.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9272583723068237, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:49.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9247678518295288, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:50.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9285032153129578, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:50.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9217737913131714, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:51.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9283490777015686, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:51.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9279062151908875, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:52.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.916147768497467, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:53.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9276132583618164, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:53.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.918116569519043, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:54.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9276606440544128, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:54.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9224790930747986, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:55.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9228503108024597, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:56.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9239938259124756, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:56.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9205426573753357, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:57.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9240436553955078, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:57.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.927301824092865, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:58.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.929262101650238, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:59.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9218370318412781, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:12:59.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9292974472045898, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:00.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9242479801177979, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:00.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9278881549835205, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:01.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9291549921035767, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:02.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9207821488380432, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:02.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9212242364883423, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:03.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9264559149742126, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:03.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9208862781524658, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:04.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9209269881248474, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:05.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9229966402053833, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:05.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9286478757858276, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:06.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9313170313835144, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:06.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9214286208152771, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:07.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9275489449501038, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:08.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9319084286689758, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:08.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9305582642555237, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:09.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9258260726928711, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:09.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9278901815414429, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:10.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9288889765739441, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:11.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9319309592247009, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:11.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9314819574356079, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:12.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9314896464347839, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:12.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9283342957496643, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:13.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9305039048194885, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:14.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9274229407310486, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:14.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.930223822593689, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:15.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9276989102363586, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:15.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9298470616340637, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:16.472419:
+{'side_obstacles': [{'side': 'rightside', 'type': 'car', 'precision': 0.9612150192260742, 'action': 'caution'}]}
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9284247159957886, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
 {'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:58.900968:
-{'rear_road_obstacles': [{'type': 'person', 'precision': 0.9285149574279785, 'distance (mts)': 1.85, 'close_to_side': 'center', 'action': 'avoid_sudden_break'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7797399163246155, 'action': 'caution'}]}
+Processing frame at timestamp 2024-12-10 17:13:17.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9293431639671326, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:17.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9313614964485168, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:18.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9235143661499023, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:18.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9300348162651062, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:19.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9307257533073425, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:20.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9309781193733215, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:20.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9315179586410522, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:21.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9322798252105713, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:21.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9310699701309204, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:22.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9213511347770691, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:23.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9244110584259033, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:23.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9245981574058533, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:24.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9260733127593994, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:24.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9239597916603088, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:25.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9232948422431946, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:26.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9200494885444641, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:26.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9278087019920349, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:27.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.932974100112915, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:27.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9244080185890198, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:28.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9303508400917053, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:29.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9322148561477661, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:29.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9235007762908936, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:30.272419:
+{'side_obstacles': [{'side': 'rightside', 'type': 'car', 'precision': 0.7592008709907532, 'action': 'caution'}]}
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9282814860343933, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
 {'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:22:59.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.8964764475822449, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8155679106712341, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.7521626949310303, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:00.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.4024769365787506, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:01.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9421627521514893, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6191616654396057, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:02.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.3352886736392975, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.27860429883003235, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.27010396122932434, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:03.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.6961448192596436, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:04.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8122128248214722, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:05.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7788295745849609, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:06.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7889272570610046, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:07.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8427619338035583, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:08.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9191321730613708, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7785917520523071, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:09.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9385555982589722, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.824219286441803, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:10.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9381067752838135, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8147305846214294, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:11.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7645465135574341, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.3698519766330719, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:12.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8522672057151794, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.82647305727005, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:13.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9346898794174194, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8428264856338501, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:14.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.5428344011306763, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.31019601225852966, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:15.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7549380660057068, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:16.900968:
-{'side_obstacles': [{'side': 'leftside', 'type': 'car', 'precision': 0.9323858022689819, 'action': 'caution'}]}
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8708025217056274, 'action': 'caution'}]}
-{'left_change': False, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:17.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.7746357917785645, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:18.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.9300020337104797, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.8851800560951233, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
-Processing frame at timestamp 2024-12-05 17:23:19.900968:
-{'side_obstacles': [{'side': 'rightside', 'type': 'person', 'precision': 0.8694921135902405, 'action': 'caution'}, {'side': 'rightside', 'type': 'person', 'precision': 0.8297563195228577, 'action': 'caution'}]}
-{'left_change': True, 'right_change': False}
+Processing frame at timestamp 2024-12-10 17:13:30.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9223564863204956, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:31.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.926144540309906, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:32.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9289151430130005, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:32.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9310816526412964, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:33.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9316300749778748, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:33.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9273405075073242, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:34.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9312124848365784, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:35.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9284550547599792, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:35.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9258265495300293, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:36.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9214919805526733, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:36.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9329453706741333, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:37.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9236344695091248, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:38.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9159895777702332, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:39.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9157726168632507, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:39.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9128463864326477, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:40.472419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9190546870231628, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:41.072419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9209035634994507, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:41.672419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9305390119552612, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:42.272419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9226951003074646, 'distance (mts)': 1.88, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}
+Processing frame at timestamp 2024-12-10 17:13:42.872419:
+{'front_road_obstacles': [{'type': 'car', 'precision': 0.9189951419830322, 'distance (mts)': 1.89, 'close_to_side': 'left', 'action': 'caution'}]}
+{'left_change': True, 'right_change': True}

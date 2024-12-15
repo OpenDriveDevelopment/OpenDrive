@@ -4,7 +4,7 @@ def front_road_obstacles(objects, coordinates, height, width):
     """
     Process front road obstacles and generate structured output.
     """
-    data_objects_info = close_calls_function(coordinates, height, width, type="Front")
+    data_objects_info = close_calls_function(coordinates, objects ,height, width, type="Front", distance_threshold= 8)
     obstacles = []
 
     for idx, (distance, position) in enumerate(data_objects_info):
@@ -24,7 +24,7 @@ def side_road_obstacles(objects, coordinates, height, width, side):
     """
     Process side road obstacles and generate structured output.
     """
-    data_objects_info = close_calls_function(coordinates, height, width, type=side)
+    data_objects_info = close_calls_function(coordinates, objects, height, width, type=side)
     obstacles = []
 
     for idx, (distance, position) in enumerate(data_objects_info):
@@ -42,7 +42,7 @@ def rear_road_obstacles(objects, coordinates, height, width):
     """
     Process rear road obstacles and generate structured output.
     """
-    data_objects_info = close_calls_function(coordinates, height, width, type="Rear")
+    data_objects_info = close_calls_function(coordinates, objects, height, width, type="Rear")
     obstacles = []
 
     for idx, (distance, position) in enumerate(data_objects_info):

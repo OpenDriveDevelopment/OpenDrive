@@ -6,12 +6,30 @@ import json
 import base64
 import platform
 
+import concurrent.futures
+import os
+
 class Camera(Sensor):
     def __init__(self, port, sensing_speed: int = 0.1):
         super().__init__() 
         self.port = port
         self.sensing_speed = sensing_speed
         self.streaming = False
+        
+        self.save_folder = f'./saved_frames_{port}'
+        
+        if not os.path.exists(self.save_folder):
+            os.makedirs(self.save_folder)
+            
+        self.executor = concurrent.futures.ThreadPoolExecutor(max_workers=1)
+        
+    def save_frame(self, frame, filename):
+        """Función para guardar el frame en la carpeta especificada."""
+        try:
+            cv2.imwrite(filename, frame)
+            print(f"[INFO] Frame saved to {filename}")
+        except Exception as e:
+            print(f"[ERROR] Failed to save frame: {e}")
         
     def enable_sensor(self):
         """Enables camera sensing by instantiating the cap(capture) instance variable and assigning it a port"""
@@ -72,6 +90,13 @@ class Camera(Sensor):
         
         if loglevel == 0:
             print(f"[INFO] Camera from port {self.port} is producing data")
+            
+        # width = int(self.cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+        # height = int(self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        # fourcc = cv2.VideoWriter_fourcc(*'XVID')
+        # out = cv2.VideoWriter('output.avi', fourcc, 20.0, (width, height))
+        
+        generated_frame = 0
         
         while self.streaming:
             if loglevel == 1:
@@ -79,6 +104,12 @@ class Camera(Sensor):
             
             ret, frame = self.cap.read()
             if ret:
+                
+                filename = os.path.join(self.save_folder, f"frame_camera_{self.port}_{generated_frame}.jpg")
+                self.executor.submit(self.save_frame, frame, filename)
+                generated_frame += 1
+                
+                # out.write(frame)
                 success, buffer = cv2.imencode('.jpg', frame)
                 if success:
                     #serializamos el frame
