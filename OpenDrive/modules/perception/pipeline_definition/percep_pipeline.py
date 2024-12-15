@@ -2,15 +2,16 @@ from typing import List
 from enum import Enum
 
 class SensorPosition(Enum):
-    FRONTAL = "Frontal"
+    FRONT = "Front"
     REAR = "Rear"
-    SIDE = "Side"
+    LEFTSIDE = "LeftSide"
+    RIGHTSIDE = "RightSide"
     CUSTOM = "Custom"
 
 class SensorType(Enum):
     CAMERA = "Camera"
-    LIDAR = "Lidar"
     CUSTOM = "Custom"
+    # LIDAR = "Lidar" 
 
 
 class SensorToModelPipeline:
@@ -30,11 +31,10 @@ class SensorToModelPipeline:
         
         ## Check for sensor type and position 
         if sensor_type.capitalize() not in self.SENSOR_TYPES:
-            raise ValueError(f"Invalid sensor_type '{sensor_type}'. Must be one of {self.SENSOR_TYPES}.")
+            raise ValueError(f"[ERROR] Invalid sensor_type '{sensor_type}'. Must be one of {self.SENSOR_TYPES}.")
         
-        
-        if sensor_position.capitalize() not in self.SENSOR_POSITIONS:
-            raise ValueError(f"Invalid sensor_pos '{sensor_position}'. Must be one of {self.SENSOR_POSITIONS}.")
+        if sensor_position not in self.SENSOR_POSITIONS:
+            raise ValueError(f"[ERROR] Invalid sensor_pos '{sensor_position}'. Must be one of {self.SENSOR_POSITIONS}.")
         
         
         ## Check for perceptions values
@@ -60,11 +60,11 @@ class SensorToModelPipeline:
         Assign default perceptions based on sensor type and position.
         """
         if sensor_type == SensorType.CAMERA.value:
-            if sensor_pos == SensorPosition.FRONTAL.value:
-                return ["lane", "signals", "objects", "distance"]
+            if sensor_pos == SensorPosition.FRONT.value:
+                return ["signals", "objects"]
             elif sensor_pos == SensorPosition.REAR.value:
-                return ["objects","distance"]
-            elif sensor_pos == SensorPosition.SIDE.value:
+                return ["objects"]
+            elif sensor_pos == SensorPosition.LEFTSIDE.value  or sensor_pos == SensorPosition.RIGHTSIDE.value :
                 return ["objects"]
             elif sensor_pos == SensorPosition.CUSTOM.value:
                 return []

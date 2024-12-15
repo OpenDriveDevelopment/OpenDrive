@@ -11,7 +11,7 @@ class DataProducer:
         broker_address (str): The address of the Kafka broker.
     """
 
-    def __init__(self, data_type: str, data_subtype: str, producer_id: str, broker_address: str = "localhost:9092"):
+    def __init__(self, data_type: str, data_subtype: str, producer_id: str, broker_address: str = "localhost:9092", loglevel: int = 1):
         """
         Initializes a new instance of the DataProducer class.
 
@@ -21,10 +21,14 @@ class DataProducer:
             producer_id (str): The unique ID of the producer.
             broker_address (str, optional): The address of the Kafka broker. Defaults to "localhost:9092".
         """
+        logingstring = None
+        if loglevel == 1:
+            logingstring = "INFO"
+             
         self.data_type = data_type
         self.data_subtype = data_subtype
         self.producer_id = producer_id
-        self.app = Application(broker_address=broker_address)
+        self.app = Application(broker_address=broker_address, loglevel= logingstring)
         self.topic = self.app.topic(name=self._build_topic_name(), value_serializer="bytes")
         self.producer = self.app.get_producer()
 

@@ -24,22 +24,28 @@ The framework is divided into three main modules, each designed to fulfill speci
 
 - **Modularity**: Each module has well-defined functions and APIs, allowing them to work together seamlessly. Developers can contribute to or modify modules without affecting the rest of the system.
 - **Interchangeable Architecture**: Although OpenDrive Framework provides the necessary components to build a complete autonomous system, its modular architecture allows developers to replace components with their own implementations.
-- **Security without compromising usability**: The framework offers secure default settings, ensuring system integrity without making it difficult to use.
-- **Developer-focused**: The APIs are designed to be functional and useful for building powerful tools. The documentation and user experience are aimed at developers, making integration and extension easier.
+- **Developer-focused**: The framework is designed to be functional and useful for building powerful tools. The documentation and user experience are aimed at developers, making integration and extension easier.
 
 ## Contributions
 
 OpenDrive Framework is an open project, welcoming contributions from the community. Whether you want to add new features, improve performance, or fix bugs, all contributions are welcome. To get started, check out the [Contribution Guide](CONTRIBUTING.md) and follow the established development standards.
 
-## Installation
+## Installation via GitHub
 
 To install the framework, follow these steps:
 1. Clone the repository: `git clone https://github.com/your_username/opendrive-framework.git`
-2. Navigate to the project root: `cd framework`
+2. Navigate to the project root
 3. Install the dependencies: `pip install -r requirements.txt`
 
-## Usage
+## Installation via PyPI
 
-You can use the framework by following these instructions:
-```python
-from opendrive import OpenDriveFramework
+To install the framework via PyPI follow the next steps:
+1. Open a new terminal
+2. Type `pip install OpenDrive`
+3. Check more info here: https://pypi.org/project/OpenDrive/
+
+
+## Usage guide - Documentation
+
+The usage guide for this framework is available at the following link:  
+[OpenDrive Documentation](https://opendrivedevelopment.github.io/OpenDrive-Documentation/)
