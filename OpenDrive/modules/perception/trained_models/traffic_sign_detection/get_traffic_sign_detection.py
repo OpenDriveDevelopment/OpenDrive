@@ -32,7 +32,8 @@ def get_sign_detection_image(image):
 
 def get_sign_detection(image):
     
-    results = model(image, verbose=False)
+    # results = model(image, verbose=False)
+    results = model.track(image, persist=True, tracker="bytetrack.yaml", verbose=False)
     
     # Lista para almacenar la metadata
     metadata = []

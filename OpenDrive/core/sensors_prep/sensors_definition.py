@@ -1,24 +1,24 @@
 from OpenDrive.modules.sensors_prep.sensors.camera import Camera
 from OpenDrive.modules.sensors_prep.pipeline_definition.sensors_stream_control import start_sensors_streaming
-import cv2
 
 def main():
-    cam1 = Camera(1,.3)
-    cam1.enable_sensor()
+    camRear = Camera(port = 2, sensing_speed = .6)
+    camRear.enable_sensor()
 
-    cam2 = Camera(2, .3)
-    cam2.enable_sensor()
+    camFront = Camera(port = 1, sensing_speed = .6)
+    camFront.enable_sensor()
+
+    camRight = Camera(port = 3, sensing_speed = .6)
+    camRight.enable_sensor()
     
-    # cam3 = Camera(3,.3)
-    # cam3.enable_sensor()
-    
-    # cam4 = Camera(4, .3)
-    # cam4.enable_sensor()
-    
+    camLeft = Camera(port = 4, sensing_speed = .6)
+    camLeft.enable_sensor()
+     
     start_sensors_streaming(
-        sensors = [cam2, cam1],
-        loglevel= 1
+        sensors = [camFront, camRear, camRight, camLeft],
+        loglevel= 0
     )
+        
     
 if __name__ == "__main__":
     main()

@@ -3,8 +3,7 @@ def traffic_signs(objects):
     Process detected traffic signs and generate structured output.
 
     Args:
-        objects (list): List of detected traffic sign types.
-        precision (int): Detection precision.
+        objects (list): List of tuples (detected_sign_type, precision) representing detected traffic signs.
 
     Returns:
         dict: Structured data for traffic signs.
@@ -22,12 +21,12 @@ def traffic_signs(objects):
     traffic_signs_data = []
 
     for obj, precision in objects:
-        action = actions_map.get(obj, None)
-        if action:  # Only include signals with associated actions
-            traffic_signs_data.append({
-                "type": obj.lower(),  # Convert to lowercase for uniformity
-                "precision": precision,
-                "action": action
-            })
+        action = actions_map.get(obj, "Signal Caution") 
+        
+        traffic_signs_data.append({
+            "type": obj.lower(),
+            "precision": precision,
+            "action": action
+        })
     
     return {"traffic_signs": traffic_signs_data}

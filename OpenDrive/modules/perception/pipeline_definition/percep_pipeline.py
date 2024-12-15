@@ -61,7 +61,7 @@ class SensorToModelPipeline:
         """
         if sensor_type == SensorType.CAMERA.value:
             if sensor_pos == SensorPosition.FRONT.value:
-                return ["lane", "signals", "objects"]
+                return ["signals", "objects"]
             elif sensor_pos == SensorPosition.REAR.value:
                 return ["objects"]
             elif sensor_pos == SensorPosition.LEFTSIDE.value  or sensor_pos == SensorPosition.RIGHTSIDE.value :

@@ -3,6 +3,7 @@ import json
 import random
 import string
 import traceback
+from datetime import datetime
 from collections import defaultdict
 from quixstreams import Application
 from OpenDrive.modules.decision_making.alerts.camera.close_calls_objects import close_calls_function
@@ -68,6 +69,7 @@ def process_data(received_data, models_to_received, output_mode, function_mode, 
 
                         coordenates = [] 
                         objects = []
+                        
 
                         if parts[3] != "lane":
                             for data_object in data_objects:
@@ -83,10 +85,8 @@ def process_data(received_data, models_to_received, output_mode, function_mode, 
 
                         if parts[3] == "objects":
 
-                            close_objects = close_calls_function( coordenates, height, width, type = parts[4] )
-
+                            close_objects = close_calls_function( coordenates, objects ,height, width, type = parts[4] )
                             close_objects_position = [ position[1] for position in close_objects ]
-
                             close_objects_position_type_camera[ parts[ 4 ] ] = close_objects_position  
 
                             if parts[4] == "Front":
@@ -99,7 +99,7 @@ def process_data(received_data, models_to_received, output_mode, function_mode, 
 
                                 rear_obstacles = rear_road_obstacles(objects, coordenates, height, width)
                                 if rear_obstacles["rear_road_obstacles"]:
-                                    process_data.append(rear_obstacles)
+                                    processed_data.append(rear_obstacles)
 
                             elif parts[4] in ["LeftSide", "RightSide"]:
 
@@ -110,7 +110,8 @@ def process_data(received_data, models_to_received, output_mode, function_mode, 
                         if parts[3] == "signals":
 
                             output_signals = traffic_signs( objects )
-                            processed_data.append(output_signals)
+                            if output_signals['traffic_signs']:
+                                processed_data.append(output_signals)
 
                     if close_objects_position_type_camera and "Rear" in close_objects_position_type_camera: 
 
@@ -119,15 +120,17 @@ def process_data(received_data, models_to_received, output_mode, function_mode, 
 
                         
                     ###########################################################
+                    readable_time = datetime.fromtimestamp(timestamp / 1e9)
 
                     if output_mode == "console":
-                        print(f"Processing frame at timestamp {timestamp}:")
+                        print("-------------------------------------------------------------------")
+                        print(f"Processing frame at timestamp {readable_time.strftime('%Y-%m-%d %H:%M:%S.%f')}:")
                         for information in processed_data:
                             print(information)
                     elif output_mode == "document":
                         print("Generating document")
                         with open("OpenDrive/outputs/output.txt", "a") as file:
-                            file.write(f"Processing frame at timestamp {timestamp}:\n")
+                            file.write(f"Processing frame at timestamp {readable_time.strftime('%Y-%m-%d %H:%M:%S.%f')}:\n")
                             for information in processed_data:
                                 file.write(f"{information}\n")  # Escribe cada elemento seguido de un salto de línea
 

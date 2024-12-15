@@ -12,21 +12,28 @@ def main():
     SensorToModelPipeline(
         input_sensor="sensor_camera_2",
         sensor_type = "Camera",
-        sensor_position = "Front",
+        sensor_position = "Rear",
+        output_decision="output_topic_objects1"
+        ),
+    SensorToModelPipeline(
+        input_sensor="sensor_camera_3", 
+        sensor_type = "Camera",
+        sensor_position = "RightSide",
+        output_decision="output_topic_objects1"
+        ),
+    SensorToModelPipeline(
+        input_sensor="sensor_camera_4", 
+        sensor_type = "Camera",
+        sensor_position = "LeftSide",
         output_decision="output_topic_objects1"
         ),
     # SensorToModelPipeline(
-    #     input_sensor="sensor_camera_3", 
+    #     input_sensor="sensor_camera_0", 
     #     sensor_type = "Camera",
-    #     sensor_position = "LeftSide",
+    #     sensor_position = "Custom",
+    #     perceptions = ["signals", "objects"],
     #     output_decision="output_topic_objects1"
     #     ),
-    # SensorToModelPipeline(
-    #     input_sensor="sensor_camera_4", 
-    #     sensor_type = "Camera",
-    #     sensor_position = "LeftSide",
-    #     output_decision="output_topic_objects1"
-    #     )
     ]
 
     control_perception_streaming(
