@@ -3,13 +3,12 @@ def list_active_topics_simulated():
     Simula la lista de topics activos en un cluster de Kafka con nombres realistas y mensajes detallados.
     """
     simulated_topics = [
-        "sensors.camera.front", 
-        "sensors.camera.rear", 
-        "sensors.lidar", 
-        "perception.objects", 
-        "perception.lanes", 
-        "perception.traffic_signs", 
-        "decisions.alerts",
+        "sensors_camera_1", 
+        "sensors_camera_2", 
+        "sensors_camera_3", 
+        "sensors_camera_4", 
+        "decision_input_topic", 
+        "test_topics",
         "system.logs"
     ]
 
