@@ -37,7 +37,7 @@ def get_cameras_info(max_index=10):
 
 
 # Detect available cameras and get their details
-cameras = get_cameras_info(3)
+cameras = get_cameras_info(4)
 
 # Display the details of the detected cameras
 if cameras:
